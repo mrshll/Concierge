@@ -65,6 +65,11 @@ PLAN OF ATTACK:
 	    1. Focus first on UX
 	      -Create one touch app that puts you in the Concierge Q. They call
 	       YOU as soon as they can so that you aren't waiting on the phone
+	      [TOM] you can probably use twilio for this piece
+	      [TOM] think that the calling infrastructure is imprtnt, but the most
+	      important thing is getting the natural language/symbolic query part of it
+ 	      up because that's what the concierges will use anywar
+
 	      -Create infastructure for email, text reception too.
 	      -Create infastructure for spending clients money for them
 		(Approval on app/Approval by email/etc)
@@ -73,7 +78,13 @@ PLAN OF ATTACK:
 	      -Build database infastructure to make learning possible. We need
 	       to figure out what the features are and which points are
 	       significant.
+	      [TOM] - we need to think about what semi-static and what dynamic
+	      databases we want to build and what data we will get to form the
+	      backbone of it. an example of a semi-static database  would be the database of "events" 
 	      -Figure out which algorithm best classifies this type of data
 	      -Test, test, test...
 
-  -DO MORE RESEARCH ON THE MARKET <<<<
+  -DO MORE RESEARCH ON THE MARKET 
+	-my (Tom's)  view is that this is the LEAST important thing to do
+	-we know that what we want to do is not being done exactly the way we plan to,
+	-and furthermore we know that this shit is hard.
