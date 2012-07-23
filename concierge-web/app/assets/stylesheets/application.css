@@ -1,0 +1,21 @@
+body { background: #efeded; color: #333; font-family: helvetica, arial, sans-serif; line-height: 1.6; font-size: 75%; }
+a { text-decoration: none; color: #0078c9; }
+a:hover { text-decoration: underline; }
+div, ul, li, h1, h2, h3, h4 { background-repeat: no-repeat; background-position: top left; }
+h1, h2, h3, h4 { font-size: 1em; line-height: 1.4; margin: 0 0 1em; }
+p, blockquote, dl, dd, ul, ol, li { margin: 0 0 1em; padding: 0; }
+ul { list-style-type: none; }
+img, img a { border: 0; }
+hr, legend { display: none; }
+form { margin: 0; }
+fieldset { display: block; margin: 0; padding: 0; border: 0; }
+
+h1 { font-size: 36px; margin-bottom: 10px; }
+
+input, select, button { vertical-align: middle; font-size: 1em; }
+
+.ClearFix { clear: both; height: 0; font-size: 0; }
+
+#layout { width: 910px; margin: 0 auto; background: #fff; padding: 25px; }
+#quick-search { margin-bottom: 20px; }
+#grid li { float: left; margin-left: 20px; width: 125px; }

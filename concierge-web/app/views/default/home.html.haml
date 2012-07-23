@@ -1,0 +1,21 @@
+%h1 Singly OAuth Example
+%h2
+  - if @profiles
+    Nice to see you again!
+  - else
+    Please connect a service
+- if session[:access_token]
+  %p
+    Your access token is
+    %input{:type => :text, :value => session[:access_token], :readonly => :readonly}
+    %a(href="/logout") Log out
+%ul
+  - %w[facebook twitter].each do |service|
+    %li
+      = service.capitalize
+      - if @profiles && @profiles[service]
+        is connected as
+        = @profiles[service]
+      - else
+        is not connected.
+        %a(href="/auth/singly?service=#{service}") Connect
