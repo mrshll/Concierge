@@ -1,0 +1,27 @@
+*.py[cod]
+
+# C extensions
+*.so
+*.db
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+lib
+include
+develop-eggs
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+.Python
