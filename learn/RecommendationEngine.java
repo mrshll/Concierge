@@ -1,8 +1,11 @@
+import java.util.*;
+import java.lang.*;
+
 /*
  * RecommendationEngine is a recommender for a single, specific user
  */
 
-class RecommendationEngine {
+public class RecommendationEngine {
 
     public ArrayList<Restaurant> recommend(double latitude, double longitude,
                                            String username) {
@@ -11,7 +14,7 @@ class RecommendationEngine {
         User user = new User();
 
         // sort restaurants by score
-        sort(restaurants, RestaurantSortByScore(user, latitude, longitude));
+        Collections.sort(restaurants, new RestaurantSortByScore(user, latitude, longitude));
 
         return restaurants;
     }
@@ -36,3 +39,4 @@ class RestaurantSortByScore implements Comparator<Restaurant> {
         return -1;
     }
 }
+

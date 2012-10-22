@@ -1,4 +1,7 @@
-class User {
+import java.util.*;
+import java.lang.*;
+
+public class User {
     private ArrayList<Restaurant> positiveLabels;
     private ArrayList<Restaurant> negativeLabels;
 
@@ -6,16 +9,19 @@ class User {
      * Gets the cuisine vector to compare to the restaurant's cusine vector
      * @return average vector of all of the positive labels cuisine vectors
      */
-    public ArrayList<double> getCuisineVector(){
-        ArrayList<double> sumVector = ArrayList<double>(positiveLabels[0].size());
-        for (int i = 0; i < positiveLabels[0].size(); i++){
-            sumVector[i] = 0;
+    public ArrayList<Double> getCuisineVector(){
+        int cuisineLength = positiveLabels.get(0).getCuisineVector().size();
+
+        ArrayList<Double> sumVector = new ArrayList<Double>(cuisineLength);
+
+        for (int i = 0; i < cuisineLength; i++){
+            sumVector.set(i, new Double(0.0));
         }
 
         for (Restaurant restaurant : positiveLabels){
-            ArrayList<double> rVector = restaurant.getCuisineVector();
+            ArrayList<Double> rVector = restaurant.getCuisineVector();
             for (int i = 0; i < rVector.size(); i++){
-                sumVector[i] += rVector[i];
+                sumVector.set(i, sumVector.get(i) + rVector.get(i));
             }
         }
 
@@ -32,9 +38,22 @@ class User {
      */
     public double getPrice() {
         double priceSum = 0.0;
-        for (restaurant r : positiveLabels){
+        for (Restaurant r : positiveLabels){
             priceSum += r.getPrice();
         }
         return priceSum / positiveLabels.size();
+    }
+
+    public User() {
+        positiveLabels = new ArrayList<Restaurant>();
+        negativeLabels = new ArrayList<Restaurant>();
+    }
+
+    public void addPositiveLabel(Restaurant restaurant){
+        positiveLabels.add(restaurant);
+    }
+
+    public void addNegativeLabel(Restaurant restaurant){
+        negativeLabels.add(restaurant);
     }
 }

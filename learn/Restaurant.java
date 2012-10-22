@@ -1,3 +1,5 @@
+import java.util.*;
+import java.lang.*;
 
 class Restaurant {
     private ArrayList<String> cuisines;
@@ -11,9 +13,9 @@ class Restaurant {
      * @return binary vector, with a 1 if the restaurant has the tag and a 0 if
      * it does not
      */
-    public ArrayList<double> getCuisineVector(){
+    public ArrayList<Double> getCuisineVector(){
         //TODO: How can this be done?
-        ArrayList<double> vector = new ArrayList<double>();
+        ArrayList<Double> vector = new ArrayList<Double>();
         return vector;
     }
 
@@ -54,33 +56,33 @@ class Restaurant {
      * @return a score
      */
     public double score(User user, double latitude, double logitude){
-        ArrayList<double> weights = new ArrayList<double>();
-        list.add(1.0); //cuisine weight
-        list.add(1.0); //rating weight
-        list.add(-1.0); //distance weight
-        list.add(-1.0); //price weight
+        ArrayList<Double> weights = new ArrayList<Double>();
+        weights.add(1.0); //cuisine weight
+        weights.add(1.0); //rating weight
+        weights.add(-1.0); //distance weight
+        weights.add(-1.0); //price weight
 
-        ArrayList<double> values = new ArrayList<double>();
-        list.add(cosineSimilarity(getCuisineVector(),
+        ArrayList<Double> values = new ArrayList<Double>();
+        values.add(cosineSimilarity(getCuisineVector(),
                                   user.getCuisineVector()));
-        list.add(rating);
-        list.add(distance);
-        list.add(Math.abs(user.getPrice() - price);
+        values.add(rating);
+        values.add(distance);
+        values.add(Math.abs(user.getPrice() - price));
 
         return dotProduct(weights, values);
 
     }
 
-    private double cosineSimilarity(ArrayList<double> xs, ArrayList<double> ys){
+    private double cosineSimilarity(ArrayList<Double> xs, ArrayList<Double> ys){
         return dotProduct(xs, ys) /
             (Math.sqrt(dotProduct(xs, xs)) * Math.sqrt(dotProduct(ys, ys)));
     }
 
-    private double dotProduct(ArrayList<double> xs, ArrayList<double> ys){
+    private double dotProduct(ArrayList<Double> xs, ArrayList<Double> ys){
         assert xs.size() == ys.size() : "xs and ys are not the same length";
         double sum = 0.0;
         for (int i = 0; i < xs.size(); i++) {
-            sum += xs[i] * ys[i];
+            sum += xs.get(i) * ys.get(i);
         }
         return sum;
     }
