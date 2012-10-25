@@ -9,6 +9,8 @@ Install MySQL
   If you use mac you can:
     brew install mysql
     And use "Sequel Pro" to easily manage it.
+Install requirements
+  pip install -r requirements.pip
 Install GeoData
   https://docs.djangoproject.com/en/dev/ref/contrib/gis/install/#ref-gis-install
 Set up tables:
