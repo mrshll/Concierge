@@ -134,10 +134,12 @@ INSTALLED_APPS = (
   'south',
   'lettuce.django',
   'factual',
+  'tastypie',
+
   'concierge',
   'utility',
   'recommendation_item',
-  'singly',
+  'user_profile',
 )
 
 # A sample logging configuration. The only tangible logging

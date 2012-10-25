@@ -25,6 +25,7 @@ class RecommendationItem(models.Model):
     date_added = models.DateTimeField(auto_now=True)
     data_sources = models.TextField(null=True, blank=True)
     address = models.ForeignKey(Address)
+    title = models.CharField(max_length=120, default="")
 
     # takes in a destination and returns the distance from it in miles
     def distanceFrom(self, dest):

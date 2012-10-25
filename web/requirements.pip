@@ -9,3 +9,5 @@ factual-api
 lettuce
 south
 mysql-python
+django-tastypie
+lxml

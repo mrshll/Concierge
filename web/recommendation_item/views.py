@@ -32,7 +32,8 @@ def getRestaurantDataFromFactual(location):
                                                           longitude=datum.get('longitude',0),
                                                            latitude=datum.get('latitude',0))
 
-        r, r_created = Restaurant.objects.get_or_create(   cuisines=datum.get('cuisine',0),
+        r, r_created = Restaurant.objects.get_or_create(      title=datum.get('name',0),
+                                                           cuisines=datum.get('cuisine',0),
                                                              rating=datum.get('rating',0),
                                                               price=datum.get('price',0),
                                                             address=a,
