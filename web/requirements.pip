@@ -6,3 +6,4 @@ django
 requests
 simplejson
 factual-api
+lettuce

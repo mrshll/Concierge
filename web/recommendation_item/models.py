@@ -1,33 +1,19 @@
+import math
 from django.db import models
-from django.contrib.gis.db import models
+from django.contrib.gis.db import models as geo_models
 from django.contrib.localflavor.us.models import USStateField
 
-from utility import models
-
-# zipcode object set up with a polygon field such that we can filter based on proximity
-class Zipcode(models.Model):
-    code = models.CharField(max_length=5)
-    poly = models.PolygonField()
-    objects = models.GeoManager()
+from utility import models as util_models
 
 # address model from: https://docs.djangoproject.com/en/dev/ref/contrib/gis/model-api/
-class Address(models.Model):
-    num = models.IntegerField()
-    street = models.CharField(max_length=100)
+class Address(geo_models.Model):
+    longitude = models.FloatField()
+    latitude = models.FloatField()
+    street_address = models.CharField(max_length=200)
     city = models.CharField(max_length=100)
     state = USStateField()
-    zipcode = Zipcode()
-    objects = models.GeoManager()
-
-class Restaurant(models.Model):
-    cuisines = models.TextField(null=True, blank=True)
-
-    # rating, dangerous assumption that this is always out of 5
-    rating   = models.FloatField(null=True, blank=True)
-
-    # price from 1-5
-    price    = models.IntegerField(null=True, blank=True)
-
+    zipcode = models.CharField(max_length=10)
+    objects = geo_models.GeoManager()
 
 # a recommendation item abstracts the item being recommended. And example of a
 # recommendation item is a restaurant, an event, or a song.
@@ -39,5 +25,34 @@ class RecommendationItem(models.Model):
     date_added = models.DateTimeField(auto_now=True)
     data_sources = models.TextField(null=True, blank=True)
     address = models.ForeignKey(Address)
+
+    # takes in a destination and returns the distance from it in miles
+    def distanceFrom(self, dest):
+        lat1 = self.address.latitude
+        lon1 = self.address.longitude
+        lat2 = dest.address.latitude
+        lon2 = dest.address.longitude
+        radius = 6371 # km of earth
+
+        dlat = math.radians(lat2-lat1)
+        dlon = math.radians(lon2-lon1)
+        a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1))\
+                                                  * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+        d = radius * c
+
+        # convert to miles
+        d = d * 0.621371
+
+        return d
+
+
+class Restaurant(RecommendationItem):
+    cuisines = models.TextField(null=True, blank=True)
+    # rating, dangerous assumption that this is always out of 5
+    rating   = models.FloatField(null=True, blank=True)
+    # price from 1-5
+    price    = util_models.IntegerRangeField(min_value=1,max_value=5)
+
 
 

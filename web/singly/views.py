@@ -1,13 +1,13 @@
 from django.http import HttpResponseRedirect
-from singly import SinglyHelper
 from django.contrib.auth import authenticate, login as auth_login
+
+from singly import SinglyHelper
 from models import UserProfile
 
 
 def authenticate_redirect(request, service):
     url = SinglyHelper.get_authorize_url(service)
     return HttpResponseRedirect(url)
-
 
 def authorize_callback(request):
     code = request.GET.get('code')
