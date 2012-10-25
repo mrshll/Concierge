@@ -7,3 +7,5 @@ requests
 simplejson
 factual-api
 lettuce
+south
+mysql-python

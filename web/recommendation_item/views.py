@@ -1,4 +1,3 @@
-import json
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render_to_response
 
@@ -21,27 +20,25 @@ def getRestaurantDataFromFactual(location):
     query = query.geo(location)
     query_data = query.data()
 
-#    for datum in query_data:
-#        # dictionary to hold current item's descriptors
-#        restaurant_data = json.loads(datum)
-#        sources = "{'factual':["+restaurant_data['factual_id']+"]}"
-#
-#        a = Address(street_address=restaurant_data['address'],
-#                                    city=restaurant_data['locality'],
-#                                   state=restaurant_data['region'],
-#                                 zipcode=restaurant_data['postcode'],
-#                               longitude=restaurant_data['longitude'],
-#                                latitude=restaurant_data['latitude'])
-#        a.save()
-#
-#        r = Restaurant(cuisines=restaurant_data['cuisine'],
-#                         rating=restaurant_data['rating'],
-#                          price=restaurant_data['price'],
-#                        address=a,
-#                   data_sources=sources)
-#        r.save()
-#        print(a)
-#        print(r)
+    for datum in query_data:
+        print datum
+        # dictionary to hold current item's descriptors
+        sources = "{'factual':["+datum.get('factual_id', 0)+"]}"
+
+        a, a_created = Address.objects.get_or_create(street_address=datum.get('address',0),
+                                                               city=datum.get('locality',0),
+                                                              state=datum.get('region',0),
+                                                            zipcode=datum.get('postcode',0),
+                                                          longitude=datum.get('longitude',0),
+                                                           latitude=datum.get('latitude',0))
+
+        r, r_created = Restaurant.objects.get_or_create(   cuisines=datum.get('cuisine',0),
+                                                             rating=datum.get('rating',0),
+                                                              price=datum.get('price',0),
+                                                            address=a,
+                                                       data_sources=sources)
+        print(a)
+        print(r)
 
 def testFactual(request):
     getRestaurantDataFromFactual(CAMPUS_CENTER)
