@@ -18,7 +18,7 @@ class Address(geo_models.Model):
   objects = geo_models.GeoManager()
 
 # holds a set of recommendation_items and their ratings for a particular user
-class RecommenationList(models.Model):
+class RecommendationList(models.Model):
   user = models.ForeignKey(User)
 
 # a recommendation item abstracts the item being recommended. And example of a
@@ -34,25 +34,25 @@ class RecommendationItem(models.Model):
   address = models.ForeignKey(Address)
   title = models.CharField(max_length=120, default="")
 
-    # takes in a destination and returns the distance from it in miles
-    def distanceFrom(self, dest):
-      lat1 = self.address.latitude
-      lon1 = self.address.longitude
-      lat2 = dest.address.latitude
-      lon2 = dest.address.longitude
-      radius = 6371 # km of earth
+  # takes in a destination and returns the distance from it in miles
+  def distanceFrom(self, dest):
+    lat1 = self.address.latitude
+    lon1 = self.address.longitude
+    lat2 = dest.address.latitude
+    lon2 = dest.address.longitude
+    radius = 6371 # km of earth
 
-      dlat = math.radians(lat2-lat1)
-      dlon = math.radians(lon2-lon1)
-      a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1))\
-          * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
-      c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
-      d = radius * c
+    dlat = math.radians(lat2-lat1)
+    dlon = math.radians(lon2-lon1)
+    a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1))\
+        * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+    d = radius * c
 
-      # convert to miles
-      d = d * 0.621371
+    # convert to miles
+    d = d * 0.621371
 
-      return d
+    return d
 
 # specific recommendation item extensions
 class Restaurant(RecommendationItem):
