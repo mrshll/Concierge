@@ -3,6 +3,8 @@ from django.db import models
 from django.contrib.gis.db import models as geo_models
 from django.contrib.localflavor.us.models import USStateField
 
+from django.contrib.auth.models import User
+
 from utility import models as util_models
 
 # address model from: https://docs.djangoproject.com/en/dev/ref/contrib/gis/model-api/
@@ -17,6 +19,7 @@ class Address(geo_models.Model):
 
 # holds a set of recommendation_items and their ratings for a particular user
 class RecommenationList(models.Model):
+  user = models.ForeignKey(User)
 
 # a recommendation item abstracts the item being recommended. And example of a
 # recommendation item is a restaurant, an event, or a song.
