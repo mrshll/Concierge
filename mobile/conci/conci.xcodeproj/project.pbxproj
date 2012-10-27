@@ -51,6 +51,10 @@
 		A6F114B3163C5A8F007A427E /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1149D163C5A8F007A427E /* SBJsonUTF8Stream.m */; };
 		A6F114B4163C5A8F007A427E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1149F163C5A8F007A427E /* SBJsonWriter.m */; };
 		A6F114BD163C5B60007A427E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F114BC163C5B60007A427E /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6F114BF163C5C18007A427E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F114BE163C5C18007A427E /* libz.dylib */; };
+		A6F114C1163C5C25007A427E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F114C0163C5C25007A427E /* MobileCoreServices.framework */; };
+		A6F114C3163C5C2C007A427E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F114C2163C5C2C007A427E /* SystemConfiguration.framework */; };
+		A6F114C5163C5C35007A427E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F114C4163C5C35007A427E /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +147,10 @@
 		A6F1149F163C5A8F007A427E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		A6F114BB163C5B60007A427E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		A6F114BC163C5B60007A427E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A6F114BE163C5C18007A427E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A6F114C0163C5C25007A427E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A6F114C2163C5C2C007A427E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A6F114C4163C5C35007A427E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F114C5163C5C35007A427E /* CFNetwork.framework in Frameworks */,
+				A6F114C3163C5C2C007A427E /* SystemConfiguration.framework in Frameworks */,
+				A6F114C1163C5C25007A427E /* MobileCoreServices.framework in Frameworks */,
+				A6F114BF163C5C18007A427E /* libz.dylib in Frameworks */,
 				A6C999DE163C57EA0025EBB8 /* UIKit.framework in Frameworks */,
 				A6C999E0163C57EA0025EBB8 /* Foundation.framework in Frameworks */,
 				A6C999E2163C57EA0025EBB8 /* CoreGraphics.framework in Frameworks */,
@@ -173,6 +185,10 @@
 		A6C999CE163C57EA0025EBB8 = {
 			isa = PBXGroup;
 			children = (
+				A6F114C4163C5C35007A427E /* CFNetwork.framework */,
+				A6F114C2163C5C2C007A427E /* SystemConfiguration.framework */,
+				A6F114C0163C5C25007A427E /* MobileCoreServices.framework */,
+				A6F114BE163C5C18007A427E /* libz.dylib */,
 				A6C999E3163C57EA0025EBB8 /* conci */,
 				A6C99A12163C57EA0025EBB8 /* conciTests */,
 				A6C999DC163C57EA0025EBB8 /* Frameworks */,
@@ -458,6 +474,7 @@
 				A6F114A5163C5A8F007A427E /* ASIHTTPRequest.m in Sources */,
 				A6F114A6163C5A8F007A427E /* ASIInputStream.m in Sources */,
 				A6F114A7163C5A8F007A427E /* ASINetworkQueue.m in Sources */,
+				A6F114BD163C5B60007A427E /* Reachability.m in Sources */,
 				A6F114A9163C5A8F007A427E /* NSObject+SBJson.m in Sources */,
 				A6F114AA163C5A8F007A427E /* SBJsonParser.m in Sources */,
 				A6F114AB163C5A8F007A427E /* SBJsonStreamParser.m in Sources */,
@@ -470,7 +487,6 @@
 				A6F114B2163C5A8F007A427E /* SBJsonTokeniser.m in Sources */,
 				A6F114B3163C5A8F007A427E /* SBJsonUTF8Stream.m in Sources */,
 				A6F114B4163C5A8F007A427E /* SBJsonWriter.m in Sources */,
-				A6F114BD163C5B60007A427E /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

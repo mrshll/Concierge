@@ -1,417 +1,0 @@
-Tconci
-v5
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Info.plist conci/conci-Info.plist
-cProcessPCH /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/PrecompiledHeaders/conci-Prefix-bmnzxllbwdjteodngpomikwwaaaa/conci-Prefix.pch.pth conci/conci-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/main.o /Users/mmoutenot/projects/Concierge/mobile/conci/conci/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGAppDelegate.o /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGFirstViewController.o /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGFirstViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGSecondViewController.o /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGSecondViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/conci normal i386
-cGenerateDSYMFile /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app.dSYM /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/conci
-cCopyStringsFile /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/en.lproj/InfoPlist.strings conci/en.lproj/InfoPlist.strings
-cCpResource conci/Default.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default.png
-cCpResource conci/Default@2x.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default@2x.png
-cCpResource conci/Default-568h@2x.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default-568h@2x.png
-cCompileStoryboard /Users/mmoutenot/projects/Concierge/mobile/conci/conci/en.lproj/MainStoryboard.storyboard
-cCpResource conci/first.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first.png
-cCpResource conci/first@2x.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first@2x.png
-cCpResource conci/second.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second.png
-cCpResource conci/second@2x.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second@2x.png
-cTouch /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
-c000000005070F0720000000000000110
-t1349578866
-s272
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000005067DABC0000000000228FD0
-t1348983484
-s2265040
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000005067DABE00000000003DCEF0
-t1348983486
-s4050672
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000005067DABE00000000000015F7
-t1348983486
-s5623
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000005067DAC30000000000000E8D
-t1348983491
-s3725
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000005067DAC40000000000AB3D60
-t1348983492
-s11222368
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/usr/include/Availability.h
-c000000005067DAD00000000000001B54
-t1348983504
-s6996
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/PrecompiledHeaders/conci-Prefix-bmnzxllbwdjteodngpomikwwaaaa/conci-Prefix.pch.pth
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGAppDelegate.o
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGFirstViewController.o
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGSecondViewController.o
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/conci.LinkFileList
-c00000000508C220600000000000002AC
-t1351361030
-s684
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/main.o
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app.dSYM
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default-568h@2x.png
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default.png
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default@2x.png
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Info.plist
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/PkgInfo
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/conci
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/en.lproj/InfoPlist.strings
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/en.lproj/MainStoryboard.storyboardc
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first.png
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first@2x.png
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second.png
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second@2x.png
-t2
-s0
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGAppDelegate.m
-c00000000508C206A00000000000007DA
-t1351360618
-s2010
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGFirstViewController.m
-c00000000508C206A0000000000000214
-t1351360618
-s532
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGSecondViewController.m
-c00000000508C206A0000000000000218
-t1351360618
-s536
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/Default-568h@2x.png
-c0000000050262AB100000000000048A2
-t1344678577
-s18594
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/Default.png
-c0000000050262AB1000000000000198C
-t1344678577
-s6540
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/Default@2x.png
-c0000000050262AB10000000000003EEB
-t1344678577
-s16107
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/conci-Prefix.pch
-c00000000508C206A0000000000000135
-t1351360618
-s309
-i<Availability.h>
-i<UIKit/UIKit.h>
-i<Foundation/Foundation.h>
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/en.lproj/InfoPlist.strings
-c00000000508C206A000000000000002D
-t1351360618
-s45
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/en.lproj/MainStoryboard.storyboard
-c00000000508C206A0000000000002608
-t1351360618
-s9736
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/first.png
-c0000000050262AB100000000000000FD
-t1344678577
-s253
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/first@2x.png
-c0000000050262AB10000000000000192
-t1344678577
-s402
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/main.m
-c00000000508C206A0000000000000159
-t1351360618
-s345
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/second.png
-c0000000050262AB10000000000000080
-t1344678577
-s128
-
-N/Users/mmoutenot/projects/Concierge/mobile/conci/conci/second@2x.png
-c0000000050262AB10000000000000082
-t1344678577
-s130
-
-Nconci/conci-Info.plist
-c00000000508C20B4000000000000052C
-t1351360692
-s1324
-
-CBuild AST from /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGAppDelegate.m
-r0
-
-CBuild AST from /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGFirstViewController.m
-r0
-
-CBuild AST from /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGSecondViewController.m
-r0
-
-CBuild AST from /Users/mmoutenot/projects/Concierge/mobile/conci/conci/main.m
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies315d1486593cb641^6abf1986593cb641^---0#1#0#--18"Check dependencies36"EBAB309E-50F2-40B3-A2C9-4987A88BB863-
-
-CCompileC DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGAppDelegate.o /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s373053830.462613
-e373053830.587706
-r1
-xCompileC
-xDerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGAppDelegate.o
-x/Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGAppDelegate.m6b9b7686593cb641^50739686593cb641^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGAppDelegate.m0000000000000000^3993"CompileC DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGAppDelegate.o conci/CGAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-generated-files.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-own-target-headers.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-all-target-headers.hmap -iquote /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-project-headers.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/DerivedSources/i386 -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/DerivedSources -F/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator -include /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/PrecompiledHeaders/conci-Prefix-bmnzxllbwdjteodngpomikwwaaaa/conci-Prefix.pch -MMD -MT dependencies -MF /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGAppDelegate.d --serialize-diagnostics /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGAppDelegate.dia -c /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGAppDelegate.m -o /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGAppDelegate.o36"D185FEA4-AD96-4B87-88AB-1D65EFDB8B1D-
-
-CCompileC DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGFirstViewController.o /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGFirstViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s373053830.462625
-e373053830.588904
-r1
-xCompileC
-xDerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGFirstViewController.o
-x/Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGFirstViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGFirstViewController.m408a7686593cb641^e3c19686593cb641^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGFirstViewController.m0000000000000000^4041"CompileC DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGFirstViewController.o conci/CGFirstViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-generated-files.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-own-target-headers.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-all-target-headers.hmap -iquote /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-project-headers.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/DerivedSources/i386 -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/DerivedSources -F/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator -include /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/PrecompiledHeaders/conci-Prefix-bmnzxllbwdjteodngpomikwwaaaa/conci-Prefix.pch -MMD -MT dependencies -MF /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGFirstViewController.d --serialize-diagnostics /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGFirstViewController.dia -c /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGFirstViewController.m -o /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGFirstViewController.o36"E24AFFCE-D3BC-49F0-A1BA-C8016D18A00F-
-
-CCompileC DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGSecondViewController.o /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGSecondViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s373053830.462631
-e373053830.588271
-r1
-xCompileC
-xDerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGSecondViewController.o
-x/Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGSecondViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGSecondViewController.mc8957686593cb641^bb989686593cb641^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGSecondViewController.m0000000000000000^4047"CompileC DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGSecondViewController.o conci/CGSecondViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-generated-files.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-own-target-headers.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-all-target-headers.hmap -iquote /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-project-headers.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/DerivedSources/i386 -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/DerivedSources -F/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator -include /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/PrecompiledHeaders/conci-Prefix-bmnzxllbwdjteodngpomikwwaaaa/conci-Prefix.pch -MMD -MT dependencies -MF /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGSecondViewController.d --serialize-diagnostics /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGSecondViewController.dia -c /Users/mmoutenot/projects/Concierge/mobile/conci/conci/CGSecondViewController.m -o /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/CGSecondViewController.o36"CE056996-B0CF-4862-98BB-1BF0794F7B5E-
-
-CCompileC DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/main.o /Users/mmoutenot/projects/Concierge/mobile/conci/conci/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s373053830.462614
-e373053830.587315
-r1
-xCompileC
-xDerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/main.o
-x/Users/mmoutenot/projects/Concierge/mobile/conci/conci/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/mmoutenot/projects/Concierge/mobile/conci/conci/main.m728a7686593cb641^b85b9686593cb641^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/conci/main.m0000000000000000^3939"CompileC DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/main.o conci/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-generated-files.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-own-target-headers.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-all-target-headers.hmap -iquote /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-project-headers.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/DerivedSources/i386 -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/DerivedSources -F/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator -include /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/PrecompiledHeaders/conci-Prefix-bmnzxllbwdjteodngpomikwwaaaa/conci-Prefix.pch -MMD -MT dependencies -MF /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/main.dia -c /Users/mmoutenot/projects/Concierge/mobile/conci/conci/main.m -o /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/main.o36"838E46EB-5B4F-4799-8BED-F265F4D2DF83-
-
-CCompileStoryboard /Users/mmoutenot/projects/Concierge/mobile/conci/conci/en.lproj/MainStoryboard.storyboard
-s373053831.381201
-e373053832.292242
-r1
-xCompileStoryboard
-x/Users/mmoutenot/projects/Concierge/mobile/conci/conci/en.lproj/MainStoryboard.storyboard
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"CompileStoryboard conci/en.lproj/MainStoryboard.storyboardd4ba6187593cb641^77d64a88593cb641^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/conci/en.lproj/MainStoryboard.storyboard0000000000000000^995"CompileStoryboard conci/en.lproj/MainStoryboard.storyboard    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/en.lproj/MainStoryboard.storyboardc /Users/mmoutenot/projects/Concierge/mobile/conci/conci/en.lproj/MainStoryboard.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"DF8891B0-E6CA-4E8B-AD2B-170494A38E8F-
-
-CCopyStringsFile /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/en.lproj/InfoPlist.strings conci/en.lproj/InfoPlist.strings
-s373053831.381141
-e373053831.389374
-r1
-xCopyStringsFile
-x/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/en.lproj/InfoPlist.strings
-xconci/en.lproj/InfoPlist.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Copy conci/en.lproj/InfoPlist.stringsc2be6187593cb641^21af6387593cb641^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/conci/en.lproj/InfoPlist.strings0000000000000000^641"CopyStringsFile DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/en.lproj/InfoPlist.strings conci/en.lproj/InfoPlist.strings    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/en.lproj -- conci/en.lproj/InfoPlist.strings36"FA02EFE2-FF43-4581-910E-C09D3208AE6D-
-
-CCpResource conci/Default-568h@2x.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default-568h@2x.png
-s373053831.381177
-e373053831.388119
-r1
-xCpResource
-xconci/Default-568h@2x.png
-xDerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default-568h@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Copy DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default-568h@2x.png87c06187593cb641^3a5c6387593cb641^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default-568h@2x.png000000000080d041^680"CpResource "conci/Default-568h@2x.png" "DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default-568h@2x.png"    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/mmoutenot/projects/Concierge/mobile/conci/conci/Default-568h@2x.png" /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app36"D68EE4AF-3D44-46F5-8E80-0721A391BF9A-
-
-CCpResource conci/Default.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default.png
-s373053831.381151
-e373053831.385036
-r1
-xCpResource
-xconci/Default.png
-xDerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Copy DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default.pngbabc6187593cb641^0c926287593cb641^---0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default.png000000000080d041^650"CpResource conci/Default.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default.png    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mmoutenot/projects/Concierge/mobile/conci/conci/Default.png /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app36"7343C3D7-27D7-48B0-A339-E0D69242B297-
-
-CCpResource conci/Default@2x.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default@2x.png
-s373053831.381170
-e373053831.387038
-r1
-xCpResource
-xconci/Default@2x.png
-xDerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Copy DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default@2x.pngcac06187593cb641^40156387593cb641^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default@2x.png000000000080d041^665"CpResource "conci/Default@2x.png" "DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Default@2x.png"    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/mmoutenot/projects/Concierge/mobile/conci/conci/Default@2x.png" /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app36"44BF2FCC-6CC6-4B26-8F2A-16D2F2F8D859-
-
-CCpResource conci/first.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first.png
-s373053831.381212
-e373053831.391688
-r1
-xCpResource
-xconci/first.png
-xDerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first.pnga4c16187593cb641^aa456487593cb641^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first.png000000000080d041^644"CpResource conci/first.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first.png    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mmoutenot/projects/Concierge/mobile/conci/conci/first.png /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app36"81FA7A91-9A86-482D-8703-37125BF462BA-
-
-CCpResource conci/first@2x.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first@2x.png
-s373053831.381222
-e373053831.389347
-r1
-xCpResource
-xconci/first@2x.png
-xDerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Copy DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first@2x.png2fc16187593cb641^82ac6387593cb641^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first@2x.png000000000080d041^659"CpResource "conci/first@2x.png" "DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/first@2x.png"    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/mmoutenot/projects/Concierge/mobile/conci/conci/first@2x.png" /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app36"05F29F6C-205D-4E16-B094-FE523C77A1BA-
-
-CCpResource conci/second.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second.png
-s373053831.381427
-e373053831.390515
-r1
-xCpResource
-xconci/second.png
-xDerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Copy DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second.png6ec26187593cb641^40f96387593cb641^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second.png000000000080d041^647"CpResource conci/second.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second.png    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mmoutenot/projects/Concierge/mobile/conci/conci/second.png /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app36"4C1AA354-9F3D-401F-AA69-93FC852E026F-
-
-CCpResource conci/second@2x.png DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second@2x.png
-s373053831.386178
-e373053831.393029
-r1
-xCpResource
-xconci/second@2x.png
-xDerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Copy DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second@2x.png9fe86287593cb641^499d6487593cb641^---0#0#0#-19%DVTDocumentLocation2@143"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second@2x.png000000000080d041^662"CpResource "conci/second@2x.png" "DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/second@2x.png"    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/mmoutenot/projects/Concierge/mobile/conci/conci/second@2x.png" /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app36"D54CBCDE-7C7A-4B0F-BBF3-AEAB2DD8F20D-
-
-CGenerateDSYMFile /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app.dSYM /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/conci
-s373053831.316820
-e373053831.372818
-r1
-xGenerateDSYMFile
-x/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app.dSYM
-x/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/conci
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Generating /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app.dSYMd42b5187593cb641^43715f87593cb641^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app.dSYM000000000080d041^751"GenerateDSYMFile DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app.dSYM DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/conci    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/conci -o /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app.dSYM36"E11055C9-63A0-4E0F-94AF-08BD4C30E076-
-
-CLd /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/conci normal i386
-s373053830.595960
-e373053831.310038
-r1
-xLd
-x/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/conci
-xnormal
-xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Link /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/conci46b59886593cb641^a25f4f87593cb641^---0#0#0#--1323"Ld DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/conci normal i386    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator -F/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator -filelist /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/Objects-normal/i386/conci.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/conci36"DE7D6F7B-3AA1-4D68-8335-3D359C0C622A-
-
-CProcessInfoPlistFile /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Info.plist conci/conci-Info.plist
-s373053830.108860
-e373053830.112811
-r1
-xProcessInfoPlistFile
-x/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Info.plist
-xconci/conci-Info.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection30"Process conci/conci-Info.plistda1b1c86593cb641^7d5e2586593cb641^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/conci/conci-Info.plist0000000000000000^747"ProcessInfoPlistFile DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Info.plist conci/conci-Info.plist    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility conci/conci-Info.plist -genpkginfo /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app/Info.plist36"7C2848C5-2AC0-4A70-AC58-843194EEAD69-
-
-CProcessPCH /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/PrecompiledHeaders/conci-Prefix-bmnzxllbwdjteodngpomikwwaaaa/conci-Prefix.pch.pth conci/conci-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s373053830.122048
-e373053830.455769
-r1
-xProcessPCH
-x/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/PrecompiledHeaders/conci-Prefix-bmnzxllbwdjteodngpomikwwaaaa/conci-Prefix.pch.pth
-xconci/conci-Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile conci/conci-Prefix.pcha27e1f86593cb641^75ae7486593cb641^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/mmoutenot/projects/Concierge/mobile/conci/conci/conci-Prefix.pch0000000000000000^3826"ProcessPCH DerivedData/conci/Build/Intermediates/PrecompiledHeaders/conci-Prefix-bmnzxllbwdjteodngpomikwwaaaa/conci-Prefix.pch.pth conci/conci-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=6.0 -iquote /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-generated-files.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-own-target-headers.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-all-target-headers.hmap -iquote /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/conci-project-headers.hmap -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/DerivedSources/i386 -I/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/conci.build/Debug-iphonesimulator/conci.build/DerivedSources -F/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/PrecompiledHeaders/conci-Prefix-bmnzxllbwdjteodngpomikwwaaaa/conci-Prefix.pch.dia -c /Users/mmoutenot/projects/Concierge/mobile/conci/conci/conci-Prefix.pch -o /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/PrecompiledHeaders/conci-Prefix-bmnzxllbwdjteodngpomikwwaaaa/conci-Prefix.pch.pth -MMD -MT dependencies -MF /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Intermediates/PrecompiledHeaders/conci-Prefix-bmnzxllbwdjteodngpomikwwaaaa/conci-Prefix.pch.d36"DB18CF65-4BEF-4F8C-B043-FCF6AFAF4B92-
-
-CProcessPCH /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Index/PrecompiledHeaders/conci-Prefix-gwqzepwlfyeadufxhinqfrmcdlet_ast/conci-Prefix.pch.pth conci/conci-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CTouch /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app
-s373053832.299864
-e373053832.321523
-r1
-xTouch
-x/Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Touch /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app12d84c88593cb641^db4f5288593cb641^---0#0#0#--458"Touch DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app    cd /Users/mmoutenot/projects/Concierge/mobile/conci    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/mmoutenot/projects/Concierge/mobile/conci/DerivedData/conci/Build/Products/Debug-iphonesimulator/conci.app36"340A44C7-9DBA-4BEC-8D5E-B59183196F7A-
-
