@@ -10,7 +10,7 @@ SINGLY_CLIENT_SECRET = '5bbb3cff19b237b4e3bf76cefb903473'
 # lvh.me is just a domain name for localhost
 SINGLY_REDIRECT_URI = 'http://localhost:8000/authorize/callback'
 
-AUTH_PROFILE_MODULE = "singly.UserProfile"
+AUTH_PROFILE_MODULE = "user_profile.UserProfile"
 
 ADMINS = (
   # ('Your Name', 'your_email@example.com'),

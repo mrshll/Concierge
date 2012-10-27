@@ -17,7 +17,7 @@
 		A6C999F2163C57EA0025EBB8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C999F1163C57EA0025EBB8 /* Default@2x.png */; };
 		A6C999F4163C57EA0025EBB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C999F3163C57EA0025EBB8 /* Default-568h@2x.png */; };
 		A6C999F7163C57EA0025EBB8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C999F5163C57EA0025EBB8 /* MainStoryboard.storyboard */; };
-		A6C999FA163C57EA0025EBB8 /* CGFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C999F9163C57EA0025EBB8 /* CGFirstViewController.m */; };
+		A6C999FA163C57EA0025EBB8 /* CGRecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C999F9163C57EA0025EBB8 /* CGRecViewController.m */; };
 		A6C999FC163C57EA0025EBB8 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C999FB163C57EA0025EBB8 /* first.png */; };
 		A6C999FE163C57EA0025EBB8 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C999FD163C57EA0025EBB8 /* first@2x.png */; };
 		A6C99A01163C57EA0025EBB8 /* CGSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C99A00163C57EA0025EBB8 /* CGSecondViewController.m */; };
@@ -82,8 +82,8 @@
 		A6C999F1163C57EA0025EBB8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A6C999F3163C57EA0025EBB8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A6C999F6163C57EA0025EBB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		A6C999F8163C57EA0025EBB8 /* CGFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGFirstViewController.h; sourceTree = "<group>"; };
-		A6C999F9163C57EA0025EBB8 /* CGFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGFirstViewController.m; sourceTree = "<group>"; };
+		A6C999F8163C57EA0025EBB8 /* CGRecViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGRecViewController.h; sourceTree = "<group>"; };
+		A6C999F9163C57EA0025EBB8 /* CGRecViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGRecViewController.m; sourceTree = "<group>"; };
 		A6C999FB163C57EA0025EBB8 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		A6C999FD163C57EA0025EBB8 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		A6C999FF163C57EA0025EBB8 /* CGSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGSecondViewController.h; sourceTree = "<group>"; };
@@ -229,8 +229,8 @@
 				A6C999EC163C57EA0025EBB8 /* CGAppDelegate.h */,
 				A6C999ED163C57EA0025EBB8 /* CGAppDelegate.m */,
 				A6C999F5163C57EA0025EBB8 /* MainStoryboard.storyboard */,
-				A6C999F8163C57EA0025EBB8 /* CGFirstViewController.h */,
-				A6C999F9163C57EA0025EBB8 /* CGFirstViewController.m */,
+				A6C999F8163C57EA0025EBB8 /* CGRecViewController.h */,
+				A6C999F9163C57EA0025EBB8 /* CGRecViewController.m */,
 				A6C999FB163C57EA0025EBB8 /* first.png */,
 				A6C999FD163C57EA0025EBB8 /* first@2x.png */,
 				A6C999FF163C57EA0025EBB8 /* CGSecondViewController.h */,
@@ -463,7 +463,7 @@
 			files = (
 				A6C999EA163C57EA0025EBB8 /* main.m in Sources */,
 				A6C999EE163C57EA0025EBB8 /* CGAppDelegate.m in Sources */,
-				A6C999FA163C57EA0025EBB8 /* CGFirstViewController.m in Sources */,
+				A6C999FA163C57EA0025EBB8 /* CGRecViewController.m in Sources */,
 				A6C99A01163C57EA0025EBB8 /* CGSecondViewController.m in Sources */,
 				A6F1146D163C5A2A007A427E /* CGCommunication.m in Sources */,
 				A6F114A0163C5A8F007A427E /* ASIAuthenticationDialog.m in Sources */,
