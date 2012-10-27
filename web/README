@@ -3,6 +3,8 @@ Get PIP & VirtualEnv
   pip install virtualenv
 Set up a virtual environment (run from within web directory)
   virtualenv -p python2.7 --no-site-packages conciergeenv
+  add the alias to make this easier (with your path, of course)
+    alias concierge="cd /Users/mmoutenot/projects/Concierge/web && source /Users/mmoutenot/projects/Concierge/web/conciergeenv/bin/activate"
 Install MySQL
   Create a database name concierge with a user 'concierge' with password
   'concierge' that has privlidges for all operations in the database.
