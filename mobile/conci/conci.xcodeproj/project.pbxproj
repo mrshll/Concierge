@@ -29,14 +29,14 @@
 		A6C99A17163C57EA0025EBB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6C99A15163C57EA0025EBB8 /* InfoPlist.strings */; };
 		A6C99A1A163C57EA0025EBB8 /* conciTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C99A19163C57EA0025EBB8 /* conciTests.m */; };
 		A6F1146D163C5A2A007A427E /* CGCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1146C163C5A2A007A427E /* CGCommunication.m */; };
-		A6F114A0163C5A8F007A427E /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11472163C5A8F007A427E /* ASIAuthenticationDialog.m */; };
-		A6F114A1163C5A8F007A427E /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11475163C5A8F007A427E /* ASIDataCompressor.m */; };
-		A6F114A2163C5A8F007A427E /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11477163C5A8F007A427E /* ASIDataDecompressor.m */; };
-		A6F114A3163C5A8F007A427E /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11479163C5A8F007A427E /* ASIDownloadCache.m */; };
-		A6F114A4163C5A8F007A427E /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1147B163C5A8F007A427E /* ASIFormDataRequest.m */; };
-		A6F114A5163C5A8F007A427E /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1147D163C5A8F007A427E /* ASIHTTPRequest.m */; };
-		A6F114A6163C5A8F007A427E /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11481163C5A8F007A427E /* ASIInputStream.m */; };
-		A6F114A7163C5A8F007A427E /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11483163C5A8F007A427E /* ASINetworkQueue.m */; };
+		A6F114A0163C5A8F007A427E /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11472163C5A8F007A427E /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6F114A1163C5A8F007A427E /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11475163C5A8F007A427E /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6F114A2163C5A8F007A427E /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11477163C5A8F007A427E /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6F114A3163C5A8F007A427E /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11479163C5A8F007A427E /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6F114A4163C5A8F007A427E /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1147B163C5A8F007A427E /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6F114A5163C5A8F007A427E /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1147D163C5A8F007A427E /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6F114A6163C5A8F007A427E /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11481163C5A8F007A427E /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6F114A7163C5A8F007A427E /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11483163C5A8F007A427E /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A6F114A8163C5A8F007A427E /* AWSiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F11485163C5A8F007A427E /* AWSiOSSDK.framework */; };
 		A6F114A9163C5A8F007A427E /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F11488163C5A8F007A427E /* NSObject+SBJson.m */; };
 		A6F114AA163C5A8F007A427E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1148B163C5A8F007A427E /* SBJsonParser.m */; };
@@ -50,6 +50,7 @@
 		A6F114B2163C5A8F007A427E /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1149B163C5A8F007A427E /* SBJsonTokeniser.m */; };
 		A6F114B3163C5A8F007A427E /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1149D163C5A8F007A427E /* SBJsonUTF8Stream.m */; };
 		A6F114B4163C5A8F007A427E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1149F163C5A8F007A427E /* SBJsonWriter.m */; };
+		A6F114BD163C5B60007A427E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F114BC163C5B60007A427E /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,8 @@
 		A6F1149D163C5A8F007A427E /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		A6F1149E163C5A8F007A427E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		A6F1149F163C5A8F007A427E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		A6F114BB163C5B60007A427E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A6F114BC163C5B60007A427E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,7 @@
 		A6C999DC163C57EA0025EBB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6F114BA163C5B60007A427E /* Reachability */,
 				A6F11470163C5A8F007A427E /* ASIHTTPRequest */,
 				A6F11485163C5A8F007A427E /* AWSiOSSDK.framework */,
 				A6F11486163C5A8F007A427E /* SBJSON */,
@@ -314,6 +318,16 @@
 			);
 			name = SBJSON;
 			path = Frameworks/SBJSON;
+			sourceTree = "<group>";
+		};
+		A6F114BA163C5B60007A427E /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A6F114BB163C5B60007A427E /* Reachability.h */,
+				A6F114BC163C5B60007A427E /* Reachability.m */,
+			);
+			name = Reachability;
+			path = Frameworks/Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,6 +470,7 @@
 				A6F114B2163C5A8F007A427E /* SBJsonTokeniser.m in Sources */,
 				A6F114B3163C5A8F007A427E /* SBJsonUTF8Stream.m in Sources */,
 				A6F114B4163C5A8F007A427E /* SBJsonWriter.m in Sources */,
+				A6F114BD163C5B60007A427E /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
