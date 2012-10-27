@@ -11,3 +11,4 @@ south
 mysql-python
 django-tastypie
 lxml
+PIL

@@ -19,6 +19,7 @@ Set up tables:
   chmod +x manage.py
   ./manage.py syncdb
   *** South might require some migrations to be run I'll have to check on this
+  Change the username length in the User model to 50
 Run server?
 
 

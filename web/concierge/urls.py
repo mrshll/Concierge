@@ -6,6 +6,7 @@ admin.autodiscover()
 from tastypie.api import Api
 from recommendation_item.api import RestaurantResource
 from user_profile.api import UserProfileResource, UserResource
+
 v1_api = Api(api_name='v1')
 v1_api.register(RestaurantResource())
 v1_api.register(UserProfileResource())
@@ -18,6 +19,9 @@ urlpatterns = patterns('concierge.views',
 
     # api routing
     (r'^api/', include(v1_api.urls)),
+
+    # survey framework
+    (r'^survey/', include('survey.urls')),
 
     (r'^admin/', include(admin.site.urls)),
 )
