@@ -40,7 +40,7 @@ class SeparatedValuesField(models.TextField):
 
     def __init__(self, *args, **kwargs):
         self.token = kwargs.pop('token', ',')
-        super(SeparatedValuesTimeField, self).__init__(*args, **kwargs)
+        super(SeparatedValuesField, self).__init__(*args, **kwargs)
 
     def to_python(self, value):
         if not value: return
