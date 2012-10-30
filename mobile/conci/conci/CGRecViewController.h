@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CGCommunication.h"
 
-@interface CGFirstViewController : UIViewController
+@interface CGRecViewController: UIViewController <CommDelegate>
 
 @end
