@@ -2,11 +2,11 @@
 #import "SBJson.h"
 #import "Constants.h"
 
-@implementation LTCommunication
+@implementation CGCommunication
     
 @synthesize delegate = _delegate;
 
-- (LTCommunication *)initWithDelegate:(id)delegate
+- (CGCommunication *)initWithDelegate:(id)delegate
 {
   if((self = [super init]))
   {
