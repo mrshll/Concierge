@@ -16,15 +16,14 @@ class RecommendationEngine:
     weights = []
     weights.append(1.0); #cuisine weight
     weights.append(1.0); #rating weight
-    weights.append(-1.0); #distance weight
     weights.append(-1.0); #price weight
 
     values = []
-    values.append(self.cosineSimilarity(self.getCuisineVector(),
-                                        user.getCuisineVector()))
-    values.append(rating);
-    values.append(distance);
-    values.append(math.abs(user.getPrice() - price));
+    restaurantCuisines = restaurant.cuisines.split(",")
+    values.append(self.cosineSimilarity(restaurantCuisines,
+                                        self.user.cuisines))
+    values.append(restaurant.rating);
+    #values.append(math.abs(user.getPrice() - restaurant.price));
     return dotProduct(weights, values)
 
   def cosineSimilarity(xs, ys):
