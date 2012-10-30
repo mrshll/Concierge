@@ -2,6 +2,8 @@ from django.contrib.auth.models import User
 from django.db import models
 from managers import UserProfileManager
 
+from recommendation_item import models
+
 
 class UserProfile(models.Model):
     access_token = models.CharField(max_length=260, null=True, blank=True)

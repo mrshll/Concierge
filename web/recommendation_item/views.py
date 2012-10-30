@@ -1,3 +1,5 @@
+from time import sleep
+
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render_to_response
 
@@ -14,15 +16,14 @@ factual = Factual(FACTUAL_KEY, FACTUAL_SECRET)
 
 # location is a circle around the location you want results from
 def getRestaurantDataFromFactual(location):
-  print location
+  added_names = []
+
   query = factual.table("restaurants")
   query = query.filters({"country":"US"})
   query = query.geo(location)
-  print(query.get_url())
 
   query_data = query.data()
-
-  added_names = []
+  print(len(query_data))
 
   for datum in query_data:
     print (datum.get('name',0))
@@ -45,9 +46,23 @@ def getRestaurantDataFromFactual(location):
     if r_created:
       added_names.append(datum.get('name',0))
 
-    return str(added_names)
+  return str(added_names)
 
 def testFactual(request):
-  CAMPUS_CENTER = circle(42.4019,  -71.1193, 5000)
-  return HttpResponse(getRestaurantDataFromFactual(CAMPUS_CENTER))
+  LENGTH_OF_ONE_LAT = 111081.59847784671
+  LENGTH_OF_ONE_LON = 82291.40843937476
+  lat = 42.549387
+  lon = -71.173553
+  end_lat = 42.31
+  end_lon = -70.663440
+
+  while lat >= end_lat:
+    while lon <= end_lon:
+      print(str(lat) + "," + str(lon))
+      LOC = circle(lat, lon, 100)
+      getRestaurantDataFromFactual(LOC)
+      lon += (100/LENGTH_OF_ONE_LON)
+      sleep(1)
+    lat -= (100/LENGTH_OF_ONE_LAT)
+  return HttpResponse("OK")
 
