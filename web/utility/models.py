@@ -2,7 +2,8 @@ from south.modelsinspector import add_introspection_rules
 from django.db import models
 
 add_introspection_rules([], ["^utility\.models\.IntegerRangeField"])
-add_introspection_rules([], ["^utility\.models\.SeparatedBaluesTimeField"])
+add_introspection_rules([], ["^utility\.models\.SeparatedValuesTimeField"])
+add_introspection_rules([], ["^utility\.models\.SeparatedValuesField"])
 
 # Create your models here.
 class IntegerRangeField(models.IntegerField):

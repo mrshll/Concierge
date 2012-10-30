@@ -14,7 +14,7 @@ class UserProfile(models.Model):
   access_token = models.CharField(max_length=260, null=True, blank=True)
   singly_id = models.CharField(max_length=260, null=True, blank=True)
   profiles = models.TextField(null=True, blank=True)
-  favorites = models.ManyToManyField(Favorite)
+  favorites = models.ManyToManyField(Favorite, null=True, blank=True)
   user = models.ForeignKey(User, related_name='profile')
 
   objects = UserProfileManager()
@@ -28,7 +28,10 @@ class UserProfile(models.Model):
   # returns a dictionary with cuisine and the frequency from the list of user's
   # favorites
   def get_fav_cuisines (self):
-    cuisines = [f.restaurant.cuisine for f in self.favorites]
+    cuisines = []
+    for f in self.favorites:
+      f_cuisines = f.restaurant.cuisines
+      [cuisines.append(cuisine) for cuisine in f_cuisines]
     return Counter(cuisines)
 
 
