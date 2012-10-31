@@ -12,7 +12,7 @@ from django.core import management
 from django.core.management.base import BaseCommand
 
 from utility.run import *
-from utility.backup import _BACKUP_S3_DUMPFILE_PREFIX, _BACKUP_DUMPFILE_PREFIX
+from utility.backup import _BACKUP_DUMPFILE_PREFIX, FTP_HOST, FTP_USER, FTP_PASS
 
 class Command(BaseCommand):
     option_list = BaseCommand.option_list + (
