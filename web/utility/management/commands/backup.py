@@ -45,6 +45,7 @@ class Command(BaseCommand):
       except (NoSectionError, NoOptionError):
         pass
 
+      print("uploading: " + tempfile_name)
       ftp = FTP(FTP_HOST, FTP_USER, FTP_PASS)
       ftp.storbinary('STOR ' + dumpfile_name, open(tempfile_name, 'rb'))
 
