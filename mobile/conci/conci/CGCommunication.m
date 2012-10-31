@@ -2,11 +2,11 @@
 #import "SBJson.h"
 #import "Constants.h"
 
-@implementation LTCommunication
+@implementation CGCommunication
     
 @synthesize delegate = _delegate;
 
-- (LTCommunication *)initWithDelegate:(id)delegate
+- (CGCommunication *)initWithDelegate:(id)delegate
 {
   if((self = [super init]))
   {
@@ -17,7 +17,6 @@
 
 - (void)postWithOptions:(NSDictionary *)options toUrl:(NSString *)url{
   
-
   ASIFormDataRequest *request = [[ASIFormDataRequest alloc] initWithURL:[NSURL URLWithString:url]];
   
   for (NSString* key in [options allKeys]) {

@@ -17,8 +17,13 @@ def index(request, template='index.html'):
     if request.user.is_authenticated():
         print(request.user)
         user_profile = request.user.get_profile()
-        # We replace single quotes with double quotes b/c of python's strict json requirements
-        profiles = simplejson.loads(user_profile.profiles.replace("'", '"'))
+        print(user_profile.profiles)
+
+        if user_profile.profiles and user_profile.profiles != "":
+          # We replace single quotes with double quotes b/c of python's strict json requirements
+          profiles = simplejson.loads(user_profile.profiles.replace("'", '"'))
+        else:
+          profiles = ""
     response = render_to_response(
             template, locals(), context_instance=RequestContext(request)
         )

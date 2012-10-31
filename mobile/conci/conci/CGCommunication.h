@@ -7,11 +7,11 @@
  *** all the boring HTTP request stuff in ASIHTTPRequest ***
  ***********************************************************/
 
-@interface LTCommunication : NSObject
+@interface CGCommunication : NSObject
 
 @property (strong, nonatomic) id delegate;
 
-- (LTCommunication *)initWithDelegate:(id)delegate;
+- (CGCommunication *)initWithDelegate:(id)delegate;
 - (void)postWithOptions:(NSDictionary*)options toUrl:(NSString*)url;
 - (void)getUrl:(NSURL *)url;
 - (void)getUrlSync:(NSURL *)url;
@@ -25,5 +25,5 @@
 - (void)requestFinished:(ASIHTTPRequest *)request;
 - (void)requestFailed:(ASIHTTPRequest *)request;
 
-@property (strong, nonatomic) LTCommunication *communicator;
+@property (strong, nonatomic) CGCommunication *communicator;
 @end
