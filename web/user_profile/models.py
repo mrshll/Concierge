@@ -23,13 +23,14 @@ class UserProfile(models.Model):
     db_table = 'user_profile'
 
   def get_avg_price (self):
-    return sum([f.restaurant.price for f in self.favorites])/len(self.favorites)
+    return sum([f.restaurant.price for f in
+               self.favorites.all()])/len(self.favorites.all())
 
   # returns a dictionary with cuisine and the frequency from the list of user's
   # favorites
   def get_fav_cuisines (self):
     cuisines = []
-    for f in self.favorites:
+    for f in self.favorites.all():
       f_cuisines = f.restaurant.cuisines
       [cuisines.append(cuisine) for cuisine in f_cuisines]
     return Counter(cuisines)
