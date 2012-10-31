@@ -48,18 +48,25 @@ class Command(BaseCommand):
     else:
       tempfile_name = "%s/%ssql" % (tempdir_name, _BACKUP_DUMPFILE_PREFIX)
 
-    ftp = FTP(FTP_HOST, FTP_USER, FTP_PASS)
-    ftp.retrbinary('RETR ' + dumpfile_name, open(tempfile_name, 'wb'))
+
+    with open(dumpfile_name, 'wb') as f:
+      def writeFile (data):
+        f.write(data)
+
+      ftp = FTP(FTP_HOST, FTP_USER, FTP_PASS)
+      ftp.retrbinary('RETR ' + dumpfile_name, writeFile)
+      f.close()
+    print("unzipping: " + dumpfile_name)
+    with gzip.open(dumpfile_name, 'rb') as f:
     # this is a hack method, should stream this
     # all to avoid using zcat for windows
-    # gzipper = gzip.GzipFile(fileobj=tempfile_name, mode='rb')
-    # out_file = file(tempfile__name, mode='wb')
-    for line in gzipper:
-      out_file.write(line)
-    out_file.close()
-    gzipper.close()
-    compressed_stream.close()
-    host_flag = ''
+      file_content = f.read()
+      f.close()
+
+      out_file = open(tempfile_name, 'wb')
+      out_file.writelines(file_content)
+      out_file.close()
+      host_flag = ''
     if settings.DATABASES['default']['HOST']:
       host_flag = "-h %s" % settings.DATABASES['default']['HOST']
     run_command("mysql %s -u %s -p%s %s < %s" %
@@ -70,7 +77,7 @@ class Command(BaseCommand):
             settings.DATABASES['default']['NAME'],
             tempfile_name,
             ))
-    print("Dump from '%s' restored." % dump_date)
+    print("Dump restored.")
     management.call_command('syncdb')
     if not options.get('restore_only'):
       management.call_command('migrate')
