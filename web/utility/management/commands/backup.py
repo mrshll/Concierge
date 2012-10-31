@@ -46,10 +46,10 @@ class Command(BaseCommand):
         pass
 
       ftp = FTP(FTP_HOST, FTP_USER, FTP_PASS)
-      ftp.storbinary('STOR ' + dumpfile_name, open(dumpfile_name, 'rb'))
+      ftp.storbinary('STOR ' + dumpfile_name, open(tempfile_name, 'rb'))
 
     except Exception, e:
-      print('error backing up')
+      print('error backing up: ' + str(e))
 
     # always delete command
     run_command('rm -f %s' % tempfile_name)
