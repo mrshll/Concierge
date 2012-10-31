@@ -25,3 +25,6 @@ pip-log.txt
 .tox
 nosetests.xml
 .Python
+
+*env
+.DS_Store

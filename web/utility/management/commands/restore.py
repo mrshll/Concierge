@@ -52,8 +52,8 @@ class Command(BaseCommand):
     ftp.retrbinary('RETR ' + dumpfile_name, open(tempfile_name, 'wb'))
     # this is a hack method, should stream this
     # all to avoid using zcat for windows
-    gzipper = gzip.GzipFile(fileobj=tempfile_name, mode='rb')
-    out_file = file(tempfile__name, mode='wb')
+    # gzipper = gzip.GzipFile(fileobj=tempfile_name, mode='rb')
+    # out_file = file(tempfile__name, mode='wb')
     for line in gzipper:
       out_file.write(line)
     out_file.close()
