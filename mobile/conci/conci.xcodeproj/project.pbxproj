@@ -151,6 +151,7 @@
 		A6F114C0163C5C25007A427E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A6F114C2163C5C2C007A427E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A6F114C4163C5C35007A427E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A6F34C24164189D70062F636 /* conci.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = conci.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +224,7 @@
 		A6C999E3163C57EA0025EBB8 /* conci */ = {
 			isa = PBXGroup;
 			children = (
+				A6F34C24164189D70062F636 /* conci.entitlements */,
 				A6F1146F163C5A3E007A427E /* Constants.h */,
 				A6F1146B163C5A2A007A427E /* CGCommunication.h */,
 				A6F1146C163C5A2A007A427E /* CGCommunication.m */,
@@ -589,6 +591,7 @@
 		A6C99A1E163C57EA0025EBB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = conci/conci.entitlements;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -604,6 +607,7 @@
 		A6C99A1F163C57EA0025EBB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = conci/conci.entitlements;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
