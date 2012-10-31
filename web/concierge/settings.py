@@ -136,7 +136,6 @@ INSTALLED_APPS = (
   'factual',
   'tastypie',
 
-  'survey',
   'concierge',
   'utility',
   'recommendation_item',
