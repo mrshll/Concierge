@@ -2,9 +2,9 @@ import math
 from recommendation_item.models import Restaurant
 
 class RecommendationEngine:
-  def __init__(self, restaurants, user_profile):
+  def __init__(self, restaurants, user):
     self.restaurants = restaurants
-    self.user_profile = user_profile
+    self.user_profile = user.get_profile()
 
   def sortRestaurants(self):
     restaurantScores = [self.score(x) for x in self.restaurants]
@@ -38,4 +38,4 @@ class RecommendationEngine:
     for i in range(len(xs)):
       sum += xs[i] * ys[i]
     return sum
-  
+

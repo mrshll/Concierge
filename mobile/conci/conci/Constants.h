@@ -13,4 +13,5 @@
 #define CGLOG_CALLED                             CGLOG(@"called")
 #define SERVER_URL                               @"http://localhost:8000/"
 #define QUESTION_API_EXT                         @"api/v1/restaurant/?format=json"
+#define GET_REC_EXT                              @"getRec/"
 #endif
