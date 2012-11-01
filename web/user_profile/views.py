@@ -1,4 +1,4 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth import authenticate, login as auth_login
 from django.contrib.auth.models import User
 
@@ -32,5 +32,5 @@ def get_recommendation(request):
   eng = RecommendationEngine(all_restaurants,all_users[0])
   sortedRestaurants = eng.sortRestaurants()
 
-  return HttpResponse(str(sortedRestaurants[0]))
+  return HttpResponse(str(sortedRestaurants[0].title))
 
