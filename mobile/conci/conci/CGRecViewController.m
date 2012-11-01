@@ -27,7 +27,7 @@
   communicator = [[CGCommunication alloc] initWithDelegate:self];
   
   // start asking the server api for a list of recs
-  NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", SERVER_URL, QUESTION_API_EXT]];
+  NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", SERVER_URL, GET_REC_EXT]];
   
   CGLOG(@"Making request at URL:%@", url)
   [communicator getUrl:url];
@@ -42,12 +42,13 @@
 - (void) requestFinished:(ASIHTTPRequest *)request {
   NSString *responseString = [request responseString];
   CGLOG(@"%@",responseString);
-  NSArray *responseArray = [[responseString JSONValue] objectForKey:@"objects"];
-  
-  NSDictionary *firstRestaurant = [responseArray objectAtIndex:7];
-  NSString *title= [firstRestaurant objectForKey:@"title"];
-  // this is just for the prototype to get the first value
-  [self.recText setText:title];
+//  NSArray *responseArray = [[responseString JSONValue] objectForKey:@"objects"];
+//  
+//  NSDictionary *firstRestaurant = [responseArray objectAtIndex:7];
+//  NSString *title= [firstRestaurant objectForKey:@"title"];
+//  // this is just for the prototype to get the first value
+//  [self.recText setText:title];
+  [self.recText setText:responseString];
 }
 
 - (void) requestFailed:(ASIHTTPRequest *)request {

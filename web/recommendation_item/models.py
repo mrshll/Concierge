@@ -54,6 +54,9 @@ class RecommendationItem(models.Model):
 
     return d
 
+  def __unicode__(self):
+    return self.title
+
 # specific recommendation item extensions
 class Restaurant(RecommendationItem):
   cuisines = util_models.SeparatedValuesField(null=True, blank=True)
