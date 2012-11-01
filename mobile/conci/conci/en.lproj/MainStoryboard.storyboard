@@ -30,18 +30,31 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1m6-R1-kM9">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="WX6-hc-MnJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7pJ-Pr-zpa" firstAttribute="top" secondItem="16" secondAttribute="top" constant="99" id="12s-fN-2Vs"/>
                             <constraint firstItem="g0O-qo-pNX" firstAttribute="leading" secondItem="7pJ-Pr-zpa" secondAttribute="leading" type="default" id="6Z1-Ng-jV7"/>
                             <constraint firstItem="7pJ-Pr-zpa" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="TVL-02-UCM"/>
+                            <constraint firstItem="1m6-R1-kM9" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="TpE-sU-W0Z"/>
                             <constraint firstItem="g0O-qo-pNX" firstAttribute="top" secondItem="7pJ-Pr-zpa" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="aWJ-pG-BNT"/>
+                            <constraint firstItem="1m6-R1-kM9" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="vsc-MM-kz7"/>
+                            <constraint firstAttribute="bottom" secondItem="1m6-R1-kM9" secondAttribute="bottom" constant="112" id="ybd-m5-Bd4"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="7"/>
                     <connections>
+                        <outlet property="locLabel" destination="1m6-R1-kM9" id="8mT-m7-R2z"/>
                         <outlet property="recText" destination="g0O-qo-pNX" id="B5L-tx-jnb"/>
+                        <outlet property="view" destination="16" id="ECb-d5-OHw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>

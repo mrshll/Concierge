@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D7D40DF1643262400E5FEAF /* CGCoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D40DE1643262400E5FEAF /* CGCoreLocationController.m */; };
 		A6C999DE163C57EA0025EBB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C999DD163C57EA0025EBB8 /* UIKit.framework */; };
 		A6C999E0163C57EA0025EBB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C999DF163C57EA0025EBB8 /* Foundation.framework */; };
 		A6C999E2163C57EA0025EBB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C999E1163C57EA0025EBB8 /* CoreGraphics.framework */; };
@@ -69,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D7D40DD1643262400E5FEAF /* CGCoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCoreLocationController.h; sourceTree = "<group>"; };
+		2D7D40DE1643262400E5FEAF /* CGCoreLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCoreLocationController.m; sourceTree = "<group>"; };
 		A6C999D9163C57EA0025EBB8 /* conci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = conci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C999DD163C57EA0025EBB8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A6C999DF163C57EA0025EBB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -244,6 +247,8 @@
 				A6C99A02163C57EA0025EBB8 /* second.png */,
 				A6C99A04163C57EA0025EBB8 /* second@2x.png */,
 				A6C999E4163C57EA0025EBB8 /* Supporting Files */,
+				2D7D40DD1643262400E5FEAF /* CGCoreLocationController.h */,
+				2D7D40DE1643262400E5FEAF /* CGCoreLocationController.m */,
 			);
 			path = conci;
 			sourceTree = "<group>";
@@ -493,6 +498,7 @@
 				A6F114B2163C5A8F007A427E /* SBJsonTokeniser.m in Sources */,
 				A6F114B3163C5A8F007A427E /* SBJsonUTF8Stream.m in Sources */,
 				A6F114B4163C5A8F007A427E /* SBJsonWriter.m in Sources */,
+				2D7D40DF1643262400E5FEAF /* CGCoreLocationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,6 +23,12 @@
 
 - (void)viewDidLoad
 {
+    
+  CLController = [[CGCoreLocationController alloc] init];
+  CLController.dgate = self;
+  [CLController.locMgr startUpdatingLocation];
+    
+    
   [super viewDidLoad];
   communicator = [[CGCommunication alloc] initWithDelegate:self];
   
@@ -31,6 +37,16 @@
   
   CGLOG(@"Making request at URL:%@", url)
   [communicator getUrl:url];
+}
+
+
+
+- (void)locationUpdate:(CLLocation *)location {
+	locLabel.text = [location description];
+}
+
+- (void)locationError:(NSError *)error {
+	locLabel.text = [error description];
 }
 
 - (void)didReceiveMemoryWarning
