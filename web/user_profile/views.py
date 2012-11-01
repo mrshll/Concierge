@@ -25,11 +25,18 @@ def authorize_callback(request):
   return HttpResponseRedirect('/')
 
 def get_recommendation(request):
-  rr = RestaurantResource()
   # use learning algorithm to get restaurants sorted by recommendation percent
   all_restaurants = Restaurant.objects.all()
-  all_users = User.objects.all()
-  eng = RecommendationEngine(all_restaurants,all_users[0])
+  user_profile = request.user.get_profile()
+  user_favorites = user_profile.favorites.all()
+  user_favorites_restaurants = [f.restaurant for f in user_favorites]
+  print('user favorites : ' + str(user_favorites_restaurants))
+
+  rec_restaurants = [r for r in all_restaurants if r not in
+                     user_favorites_restaurants]
+  print(rec_restaurants)
+
+  eng = RecommendationEngine(rec_restaurants, request.user)
   sortedRestaurants = eng.sortRestaurants()
 
   return HttpResponse(str(sortedRestaurants[0].title))
