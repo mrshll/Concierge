@@ -55,6 +55,7 @@
 		A6F114C1163C5C25007A427E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F114C0163C5C25007A427E /* MobileCoreServices.framework */; };
 		A6F114C3163C5C2C007A427E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F114C2163C5C2C007A427E /* SystemConfiguration.framework */; };
 		A6F114C5163C5C35007A427E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F114C4163C5C35007A427E /* CFNetwork.framework */; };
+		A6F34C271641937F0062F636 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F34C261641937F0062F636 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +153,7 @@
 		A6F114C2163C5C2C007A427E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A6F114C4163C5C35007A427E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A6F34C24164189D70062F636 /* conci.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = conci.entitlements; sourceTree = "<group>"; };
+		A6F34C261641937F0062F636 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F34C271641937F0062F636 /* CoreLocation.framework in Frameworks */,
 				A6F114C5163C5C35007A427E /* CFNetwork.framework in Frameworks */,
 				A6F114C3163C5C2C007A427E /* SystemConfiguration.framework in Frameworks */,
 				A6F114C1163C5C25007A427E /* MobileCoreServices.framework in Frameworks */,
@@ -186,6 +189,7 @@
 		A6C999CE163C57EA0025EBB8 = {
 			isa = PBXGroup;
 			children = (
+				A6F34C261641937F0062F636 /* CoreLocation.framework */,
 				A6F114C4163C5C35007A427E /* CFNetwork.framework */,
 				A6F114C2163C5C2C007A427E /* SystemConfiguration.framework */,
 				A6F114C0163C5C25007A427E /* MobileCoreServices.framework */,
