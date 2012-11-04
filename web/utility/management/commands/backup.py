@@ -55,5 +55,6 @@ class Command(BaseCommand):
     # always delete command
     run_command('rm -f %s' % tempfile_name)
     run_command('rmdir %s' % tempdir_name)
+    run_command('rm -f %s' % dumpfile_name)
 
 

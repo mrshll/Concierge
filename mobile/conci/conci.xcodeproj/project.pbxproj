@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D7D40DF1643262400E5FEAF /* CGCoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D40DE1643262400E5FEAF /* CGCoreLocationController.m */; };
 		A6C999DE163C57EA0025EBB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C999DD163C57EA0025EBB8 /* UIKit.framework */; };
 		A6C999E0163C57EA0025EBB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C999DF163C57EA0025EBB8 /* Foundation.framework */; };
 		A6C999E2163C57EA0025EBB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C999E1163C57EA0025EBB8 /* CoreGraphics.framework */; };
@@ -55,6 +56,7 @@
 		A6F114C1163C5C25007A427E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F114C0163C5C25007A427E /* MobileCoreServices.framework */; };
 		A6F114C3163C5C2C007A427E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F114C2163C5C2C007A427E /* SystemConfiguration.framework */; };
 		A6F114C5163C5C35007A427E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F114C4163C5C35007A427E /* CFNetwork.framework */; };
+		A6F34C271641937F0062F636 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F34C261641937F0062F636 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D7D40DD1643262400E5FEAF /* CGCoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCoreLocationController.h; sourceTree = "<group>"; };
+		2D7D40DE1643262400E5FEAF /* CGCoreLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCoreLocationController.m; sourceTree = "<group>"; };
 		A6C999D9163C57EA0025EBB8 /* conci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = conci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C999DD163C57EA0025EBB8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A6C999DF163C57EA0025EBB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -152,6 +156,7 @@
 		A6F114C2163C5C2C007A427E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A6F114C4163C5C35007A427E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A6F34C24164189D70062F636 /* conci.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = conci.entitlements; sourceTree = "<group>"; };
+		A6F34C261641937F0062F636 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F34C271641937F0062F636 /* CoreLocation.framework in Frameworks */,
 				A6F114C5163C5C35007A427E /* CFNetwork.framework in Frameworks */,
 				A6F114C3163C5C2C007A427E /* SystemConfiguration.framework in Frameworks */,
 				A6F114C1163C5C25007A427E /* MobileCoreServices.framework in Frameworks */,
@@ -186,6 +192,7 @@
 		A6C999CE163C57EA0025EBB8 = {
 			isa = PBXGroup;
 			children = (
+				A6F34C261641937F0062F636 /* CoreLocation.framework */,
 				A6F114C4163C5C35007A427E /* CFNetwork.framework */,
 				A6F114C2163C5C2C007A427E /* SystemConfiguration.framework */,
 				A6F114C0163C5C25007A427E /* MobileCoreServices.framework */,
@@ -240,6 +247,8 @@
 				A6C99A02163C57EA0025EBB8 /* second.png */,
 				A6C99A04163C57EA0025EBB8 /* second@2x.png */,
 				A6C999E4163C57EA0025EBB8 /* Supporting Files */,
+				2D7D40DD1643262400E5FEAF /* CGCoreLocationController.h */,
+				2D7D40DE1643262400E5FEAF /* CGCoreLocationController.m */,
 			);
 			path = conci;
 			sourceTree = "<group>";
@@ -489,6 +498,7 @@
 				A6F114B2163C5A8F007A427E /* SBJsonTokeniser.m in Sources */,
 				A6F114B3163C5A8F007A427E /* SBJsonUTF8Stream.m in Sources */,
 				A6F114B4163C5A8F007A427E /* SBJsonWriter.m in Sources */,
+				2D7D40DF1643262400E5FEAF /* CGCoreLocationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

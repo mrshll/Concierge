@@ -51,10 +51,10 @@ def getRestaurantDataFromFactual(location):
 def testFactual(request):
   LENGTH_OF_ONE_LAT = 111081.59847784671
   LENGTH_OF_ONE_LON = 82291.40843937476
-  lat = 42.549387
-  lon = -71.173553
-  end_lat = 42.31
-  end_lon = -70.663440
+  lat = 42.418837
+  lon = -71.130553
+  end_lat = 42.33
+  end_lon = -71.033440
 
   while lat >= end_lat:
     while lon <= end_lon:
