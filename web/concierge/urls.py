@@ -20,6 +20,9 @@ urlpatterns = patterns('concierge.views',
     # api routing
     (r'^api/', include(v1_api.urls)),
 
+    # survey
+    (r'^survey/', include('survey.urls')),
+
     (r'^admin/', include(admin.site.urls)),
 )
 

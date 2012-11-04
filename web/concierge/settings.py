@@ -137,6 +137,7 @@ INSTALLED_APPS = (
   'tastypie',
 
   'concierge',
+  'survey',
   'utility',
   'recommendation_item',
   'user_profile',
