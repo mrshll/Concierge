@@ -37,6 +37,17 @@
         <p>Profiles: <input type="text" id="access-token" value="{{ user_profile.profiles }}" /></p>
     </div>
     <ul id="twitter"></ul>
+    <h1>Choose Your Favorites</h1>
+    <form action="/survey/" method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Submit" />
+    </form>
+    <ul>
+    {% for fav in user_favorites_restaurants %}
+      <li>{{ fav.title }}</li>
+    {% endfor %}
+    </ul>
     {% endif %}
   </body>
 </html>
