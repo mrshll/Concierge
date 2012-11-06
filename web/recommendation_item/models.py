@@ -35,7 +35,7 @@ class RecommendationItem(models.Model):
   title = models.CharField(max_length=120, default="")
 
   # takes in a destination and returns the distance from it in miles
-  def distanceFrom(self, dest):
+  def distanceFromRestaurant(self, dest):
     lat1 = self.address.latitude
     lon1 = self.address.longitude
     lat2 = dest.address.latitude
@@ -54,8 +54,24 @@ class RecommendationItem(models.Model):
 
     return d
 
-  def __unicode__(self):
-    return self.title
+  def distanceFromPoint(self, point):
+    lat1 = self.address.latitude
+    lon1 = self.address.longitude
+    lat2 = point.first
+    lon2 = point.second
+    radius = 6371 # km of earth
+
+    dlat = math.radians(lat2-lat1)
+    dlon = math.radians(lon2-lon1)
+    a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1))\
+        * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+    d = radius * c
+
+    # convert to miles
+    d = d * 0.621371
+
+    return d
 
 # specific recommendation item extensions
 class Restaurant(RecommendationItem):

@@ -54,5 +54,10 @@ class SeparatedValuesField(models.TextField):
         assert(isinstance(value, list) or isinstance(value, tuple))
         return self.token.join([unicode(s) for s in value])
 
+    def get_db_prep_save(self,value):
+        print('in db_prep_save with: ', value)
+        if not value: return ''
+        else: return value
+
     def value_to_string(self, obj):
         value = self._get_val_from_obj(obj)

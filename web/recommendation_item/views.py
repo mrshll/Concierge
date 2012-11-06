@@ -26,25 +26,26 @@ def getRestaurantDataFromFactual(location):
   print(len(query_data))
 
   for datum in query_data:
-    print (datum.get('name',0))
+    print (datum.get('name', 'No name given'))
+    print(datum.get('cuisine',"No cuisine given"))
     # dictionary to hold current item's descriptors
     sources = "{'factual':["+datum.get('factual_id', 0)+"]}"
 
-    a, a_created = Address.objects.get_or_create(street_address=datum.get('address',0),
-                                                           city=datum.get('locality',0),
-                                                          state=datum.get('region',0),
-                                                        zipcode=datum.get('postcode',0),
-                                                      longitude=datum.get('longitude',0),
-                                                       latitude=datum.get('latitude',0))
+    a, a_created = Address.objects.get_or_create(street_address=datum.get('address',None),
+                                                           city=datum.get('locality',None),
+                                                          state=datum.get('region',None),
+                                                        zipcode=datum.get('postcode',None),
+                                                      longitude=datum.get('longitude',None),
+                                                       latitude=datum.get('latitude',None))
 
-    r, r_created = Restaurant.objects.get_or_create(      title=datum.get('name',0),
-                                                       cuisines=datum.get('cuisine',0),
-                                                         rating=datum.get('rating',0),
-                                                          price=datum.get('price',0),
+    r, r_created = Restaurant.objects.get_or_create(      title=datum.get('name',None),
+                                                       cuisines=datum.get('cuisine',None),
+                                                         rating=datum.get('rating',None),
+                                                          price=datum.get('price',None),
                                                         address=a,
                                                    data_sources=sources)
     if r_created:
-      added_names.append(datum.get('name',0))
+      added_names.append(datum.get('name',None))
 
   return str(added_names)
 
