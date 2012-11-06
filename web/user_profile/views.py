@@ -24,15 +24,27 @@ def authorize_callback(request):
     auth_login(request, user)
   return HttpResponseRedirect('/')
 
-def get_recommendation(request):
+def get_recommendation(request, longitude, latitude):
   # use learning algorithm to get restaurants sorted by recommendation percent
-  all_restaurants = Restaurant.objects.all()
+  # loc_restaurants = Restaurant.objects.filter(longitude__range=(longitude-1,
+  #                                                               longitude+1,
+  #                                             latitude__range=(latitude-1,
+  #                                                              latitude+1)))
+
+  loc_restaurants = Restaurant.objects.all()
+
+  for loc_restaurant in loc_restaurants:
+    if loc_restaurant.distanceFromPoint((longitude,latitude)) > 2:
+      loc_restaurants.remove(loc_restaurant)
+
+  print loc_restaurants
+
   user_profile = request.user.get_profile()
   user_favorites = user_profile.favorites.all()
   user_favorites_restaurants = [f.restaurant for f in user_favorites]
   print('user favorites : ' + str(user_favorites_restaurants))
 
-  rec_restaurants = [r for r in all_restaurants if r not in
+  rec_restaurants = [r for r in loc_restaurants if r not in
                      user_favorites_restaurants]
   print(rec_restaurants)
 
