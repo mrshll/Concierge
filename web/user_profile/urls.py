@@ -4,6 +4,6 @@ urlpatterns = patterns('user_profile.views',
         name='authenticate_redirect'),
     url(r'^authorize/callback/$', 'authorize_callback',
         name='authorize_callback'),
-    url(r'^getRec/(?P<longitude>\d+\.\d+)/(?P<latitude>\d+\.\d+)/',
+    url(r'^getRec/(?P<longitude>\-\d+\.\d+)/(?P<latitude>\d+\.\d+)/',
         'get_recommendation', name='get_recommendation'),
 )

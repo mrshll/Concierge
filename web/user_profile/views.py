@@ -32,19 +32,20 @@ def get_recommendation(request, longitude, latitude):
   #                                                              latitude+1)))
 
   loc_restaurants = Restaurant.objects.all()
+  loc_restaurants_list = list(loc_restaurants)
 
-  for loc_restaurant in loc_restaurants:
+  for loc_restaurant in loc_restaurants_list:
     if loc_restaurant.distanceFromPoint((longitude,latitude)) > 2:
-      loc_restaurants.remove(loc_restaurant)
+      loc_restaurants_list.remove(loc_restaurant)
 
-  print loc_restaurants
+  print loc_restaurants_list
 
   user_profile = request.user.get_profile()
   user_favorites = user_profile.favorites.all()
   user_favorites_restaurants = [f.restaurant for f in user_favorites]
   print('user favorites : ' + str(user_favorites_restaurants))
 
-  rec_restaurants = [r for r in loc_restaurants if r not in
+  rec_restaurants = [r for r in loc_restaurants_list if r not in
                      user_favorites_restaurants]
   print(rec_restaurants)
 

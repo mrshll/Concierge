@@ -57,8 +57,9 @@ class RecommendationItem(models.Model):
   def distanceFromPoint(self, point):
     lat1 = self.address.latitude
     lon1 = self.address.longitude
-    lat2 = point.first
-    lon2 = point.second
+    lat2_u, lon2_u = point
+    lat2 = float(lat2_u)
+    lon2 = float(lon2_u)
     radius = 6371 # km of earth
 
     dlat = math.radians(lat2-lat1)
@@ -81,3 +82,5 @@ class Restaurant(RecommendationItem):
   # price from 1-5
   price    = util_models.IntegerRangeField(min_value=1,max_value=5)
 
+  def __unicode__(self):
+    return self.title
