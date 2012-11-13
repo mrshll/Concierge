@@ -40,8 +40,8 @@ class Command(BaseCommand):
     candidate_list.sort()
     print(candidate_list)
     print('%d candidate dumps found' % len(candidate_list))
-    print('going with: ' + str(candidate_list[0]))
-    dumpfile_name = candidate_list[0]
+    print('going with: ' + str(candidate_list[-1]))
+    dumpfile_name = candidate_list[-1]
     tempdir_name = tempfile.mkdtemp()
     if sys.platform == 'win32':
       tempfile_name = "%s\\\\%ssql" % (tempdir_name, _BACKUP_DUMPFILE_PREFIX)
