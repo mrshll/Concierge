@@ -37,7 +37,7 @@ class Command(BaseCommand):
       else:
         raise
 
-    candidate_list = sorted(candidate_list)
+    candidate_list.sort()
     print(candidate_list)
     print('%d candidate dumps found' % len(candidate_list))
     print('going with: ' + str(candidate_list[0]))
