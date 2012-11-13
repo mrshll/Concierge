@@ -36,9 +36,9 @@ class Command(BaseCommand):
         print "no files in directory"
       else:
         raise
-    print(candidate_list)
 
     candidate_list = sorted(candidate_list)
+    print(candidate_list)
     print('%d candidate dumps found' % len(candidate_list))
     print('going with: ' + str(candidate_list[0]))
     dumpfile_name = candidate_list[0]
