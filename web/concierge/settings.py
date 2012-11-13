@@ -137,7 +137,6 @@ INSTALLED_APPS = (
   'tastypie',
 
   'learn',
-  'survey',
   'concierge',
   'utility',
   'recommendation_item',
