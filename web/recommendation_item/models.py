@@ -76,7 +76,7 @@ class RecommendationItem(models.Model):
 
 # specific recommendation item extensions
 class Restaurant(RecommendationItem):
-  cuisines = util_models.SeparatedValuesField(null=True, blank=True)
+  cuisines = models.CharField(max_length=400, null=True, blank=True)
   # rating, dangerous assumption that this is always out of 5
   rating   = models.FloatField(null=True, blank=True)
   # price from 1-5
