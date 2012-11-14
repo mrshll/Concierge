@@ -31,7 +31,7 @@ class UserProfile(models.Model):
   def get_fav_cuisines (self):
     cuisines = []
     for f in self.favorites.all():
-      f_cuisines = f.restaurant.cuisines
+      f_cuisines = f.restaurant.cuisines.split(",")
       [cuisines.append(cuisine) for cuisine in f_cuisines]
     return Counter(cuisines)
 

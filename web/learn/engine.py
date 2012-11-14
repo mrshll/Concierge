@@ -20,6 +20,7 @@ class RecommendationEngine:
     weights.append(-1.0) #price weight
 
     values = []
+    restaurantCuisines = restaurant.cuisines.split(",")
     values.append(self.cuisineSimilarity(restaurant.cuisines,
                                          self.user_profile.get_fav_cuisines()))
     values.append(restaurant.rating)
