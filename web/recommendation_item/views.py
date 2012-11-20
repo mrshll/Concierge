@@ -40,8 +40,8 @@ def getRestaurantDataFromFactual(location):
 
     r, r_created = Restaurant.objects.get_or_create(      title=datum.get('name',None),
                                                        cuisines=datum.get('cuisine',None),
-                                                         rating=datum.get('rating',None),
-                                                          price=datum.get('price',None),
+                                                         rating=datum.get('rating', -1),
+                                                          price=datum.get('price', -1),
                                                         address=a,
                                                    data_sources=sources)
     if r_created:

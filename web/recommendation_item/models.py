@@ -80,7 +80,7 @@ class Restaurant(RecommendationItem):
   # rating, dangerous assumption that this is always out of 5
   rating   = models.FloatField(null=True, blank=True)
   # price from 1-5
-  price    = util_models.IntegerRangeField(min_value=1,max_value=5)
+  price    = util_models.IntegerRangeField(min_value=-1,max_value=5)
 
   def __unicode__(self):
     return self.title
