@@ -65,5 +65,6 @@ def testFactual(request):
       lon += (100/LENGTH_OF_ONE_LON)
       sleep(1)
     lat -= (100/LENGTH_OF_ONE_LAT)
+    lon = -71.130553
   return HttpResponse("OK")
 
