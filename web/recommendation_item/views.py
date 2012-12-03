@@ -6,11 +6,11 @@ from django.shortcuts import render_to_response
 from factual import Factual
 from factual.utils import circle
 
+
 from recommendation_item.models import Restaurant, Address
 
 FACTUAL_KEY    = "frBfryFdtbYqmlgHrMB7LeSYWCOefyS0fhkIQTpp"
 FACTUAL_SECRET = "Qh25xjtI1XzsJ2CT7TohBArnSQKt3P3v8uyHZKpC"
-
 
 factual = Factual(FACTUAL_KEY, FACTUAL_SECRET)
 
@@ -31,12 +31,12 @@ def getRestaurantDataFromFactual(location):
     # dictionary to hold current item's descriptors
     sources = "{'factual':["+datum.get('factual_id', 0)+"]}"
 
-    a, a_created = Address.objects.get_or_create(street_address=datum.get('address',None),
-                                                           city=datum.get('locality',None),
-                                                          state=datum.get('region',None),
-                                                        zipcode=datum.get('postcode',None),
-                                                      longitude=datum.get('longitude',None),
-                                                       latitude=datum.get('latitude',None))
+    a, a_created = Address.objects.get_or_create(street_address=datum.get('address',""),
+                                                           city=datum.get('locality',""),
+                                                          state=datum.get('region',""),
+                                                        zipcode=datum.get('postcode',""),
+                                                      longitude=datum.get('longitude',-1),
+                                                       latitude=datum.get('latitude',-1))
 
     r, r_created = Restaurant.objects.get_or_create(      title=datum.get('name',None),
                                                        cuisines=datum.get('cuisine',None),
@@ -52,7 +52,7 @@ def getRestaurantDataFromFactual(location):
 def testFactual(request):
   LENGTH_OF_ONE_LAT = 111081.59847784671
   LENGTH_OF_ONE_LON = 82291.40843937476
-  lat = 42.418837
+  lat = 42.388837
   lon = -71.130553
   end_lat = 42.33
   end_lon = -71.033440
@@ -67,4 +67,3 @@ def testFactual(request):
     lat -= (100/LENGTH_OF_ONE_LAT)
     lon = -71.130553
   return HttpResponse("OK")
-
