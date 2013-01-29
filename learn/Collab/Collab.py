@@ -50,6 +50,17 @@ class Collab(object):
       weighted_sum += weight * self._get_rating(i, user)
     return weighted_sum / sum_of_weights
 
+  # returns a sorted list of the top n items that user u has not rated
+  # that the user is most likely to like
+  def suggest_items(self, n, u):
+    item_rating_pairs = []
+    for i in range(self.item_count):
+      if not self._get_rating(i, u):
+        item_rating_pairs.append((i, self.predict_rating(i, u)))
+    return zip(*sorted(item_rating_pairs,
+                       key=lambda x: x[1],
+                       reverse=True)[:n])[0]
+
   # returns true if a user u has recommended reccomendation item i
   # else returns false
   def has_reccomended(self, i, u):
@@ -88,4 +99,4 @@ class Collab(object):
 if __name__ == "__main__":
   c = Collab()
   c.load_file("data/jester-1-25.pickle")
-  print c.predict_rating(0,0)
+  print c.suggest_items(10, 0)
