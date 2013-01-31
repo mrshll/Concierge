@@ -20,7 +20,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
   'default': {
-    'ENGINE': 'django.contrib.gis.db.backends.mysql',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
     'NAME': 'concierge',  # Or path to database file if using sqlite3.
     'USER': 'concierge',                      # Not used with sqlite3.
     'PASSWORD': 'concierge',                  # Not used with sqlite3.
@@ -130,16 +130,16 @@ INSTALLED_APPS = (
   'django.contrib.messages',
   'django.contrib.staticfiles',
   'django.contrib.admin',
-  'django.contrib.gis',
+  # 'django.contrib.gis',
   'south',
   'lettuce.django',
   'factual',
   'tastypie',
 
-  'learn',
+  # 'learn',
   'concierge',
   'utility',
-  'recommendation_item',
+  # 'recommendation_item',
   'user_profile',
 )
 
