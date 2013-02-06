@@ -4,11 +4,11 @@ admin.autodiscover()
 
 # register our api resources
 from tastypie.api import Api
-from recommendation_item.api import RestaurantResource
+# from recommendation_item.api import RestaurantResource
 from user_profile.api import UserProfileResource, UserResource
 
 v1_api = Api(api_name='v1')
-v1_api.register(RestaurantResource())
+# v1_api.register(RestaurantResource())
 v1_api.register(UserProfileResource())
 v1_api.register(UserResource())
 
@@ -26,6 +26,6 @@ urlpatterns = patterns('concierge.views',
     (r'^admin/', include(admin.site.urls)),
 )
 
-urlpatterns += patterns('recommendation_item.views',
-    url(r'^getFactual/', 'testFactual'),
-)
+# urlpatterns += patterns('recommendation_item.views',
+#     url(r'^getFactual/', 'testFactual'),
+# )
