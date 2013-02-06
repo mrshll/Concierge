@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <h1>Choose Your Favorites</h1>
+    <form action="/survey/" method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

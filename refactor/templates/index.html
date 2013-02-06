@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Concierge</title>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+  <script>
+   var accessToken = '{{ user_profile.access_token }}';
+  </script>
+
+  <script src="/static/app.js"></script>
+
+  <link rel="stylesheet" href="/static/style.css" />
+ </head>
+
+ <body>
+    <h1><a href="/">Concierge</a></h1>
+    <p>Connect to your data</p>
+
+    <ul id="auth">
+    {% for service in services %}
+        <li>
+            <a href="/authenticate/{{ service.lower }}">
+                {% if service.lower in profiles %}
+                    <span class="check">&#10003;</span>
+                {% endif %}
+                {{ service }}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+
+    {% if request.user.is_authenticated %}
+    <div id="access-token-wrapper">
+        <p>Here's your access token for making API calls directly: <input type="text" id="access-token" value="{{ user_profile.access_token }}" /></p>
+        <p>Profiles: <input type="text" id="access-token" value="{{ user_profile.profiles }}" /></p>
+    </div>
+    <ul id="twitter"></ul>
+    <h1>Choose Your Favorites</h1>
+    <form action="/survey/" method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Submit" />
+    </form>
+    <ul>
+    {% for fav in user_favorites_restaurants %}
+      <li>{{ fav.title }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+  </body>
+</html>
