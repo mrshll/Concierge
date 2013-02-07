@@ -35,5 +35,49 @@ li {
 }
 
 #auth {
-   width: 275px;
+   width: 180px;
 }
+
+#headerText{
+	font-size: 40px;
+}
+
+#tagline{
+	font-size: 16px;
+	color:#1e1e1e;
+	font-family:Courier;
+	margin-left: 15px;
+	margin-top: 23px;
+}
+
+#contentWrapper{
+	clear:both;
+	
+}
+	#leftPop{
+		margin-top: 40px;
+	}
+	
+	#rightPop{
+		margin-top: 40px;
+	}
+	
+	
+	.popOutWithBorder{
+		border-width: 0px 0px 2px 0px;
+		border-color: #25aae1;
+		background-color: white;
+		border-style: solid;
+		padding:5px;
+		box-shadow: 0px 100px 1000px #ddd;
+		height:400px;
+		width: 280px;
+	}
+	
+	.left{float: left;}
+	.right{float: right;}
+	
+	.login{
+		font-size: 18px;
+		color:#17529c;
+	}

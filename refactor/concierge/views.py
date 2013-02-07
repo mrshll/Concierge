@@ -6,7 +6,7 @@ import simplejson
 def index(request, template='index.html'):
     services = [
         'Facebook',
-        'foursquare',
+        'Foursquare',
         'Instagram',
         'Tumblr',
         'Twitter',
