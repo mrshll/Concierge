@@ -30,7 +30,7 @@ class UserProfile(models.Model):
   Map tags
   Friend Count
   """
-  fb_data = models.CharField(max_length=4000)
+  fb_data = models.CharField(max_length=10000)
 
   objects = UserProfileManager()
 

@@ -6,7 +6,7 @@ import json
 def fill_profile(user_profile, singly_id, access_token):
   discovery_endpoint = '/services/facebook'
   self_endpoint = '/services/facebook/self'
-  page_likes_endpoint = '/services/facebook/page_likes'
+  page_likes_endpoint = '/services/facebook/page_likes?limit=1000'
   request = {'auth': 'true'}
   fb_discovery = Singly(access_token=access_token).make_request(discovery_endpoint, request=request)
   fb_self = Singly(access_token=access_token).make_request(self_endpoint, request=request)
