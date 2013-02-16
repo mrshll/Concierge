@@ -9,7 +9,7 @@ class UserProfile(models.Model):
     singly_id = models.CharField(max_length=260, null=True, blank=True)
     profiles = models.TextField(null=True, blank=True)
 
-    fb_data = models.CharField(max_length=4000)
+    fb_data = models.CharField(max_length=10000)
     objects = UserProfileManager()
 
     class Meta:
