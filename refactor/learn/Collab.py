@@ -1,6 +1,9 @@
-import cPickle
+import cPickle, json
+from datetime import date
 from scipy.spatial.distance import cosine
 from numpy import array
+
+from user_profile.models import UserProfile
 
 # Collab is an implementation of the memory-based collaboration filtering
 # algorithm found at http://en.wikipedia.org/wiki/Collaborative_filtering
@@ -17,14 +20,6 @@ class Collab(object):
   ########################################
   # FUNCTIONS FOR OUTSIDE USE (PUBLIC)
   ########################################
-
-  # load a file into the engine, user for side-effect
-  # data is [users][items]
-  def load_file(self, file_name):
-    with open(file_name) as f:
-      self.rating_matrix = cPickle.load(f)
-      self.user_count = len(self.rating_matrix)
-      self.item_count = len(self.rating_matrix[0])
 
   # predicts the rating of the reccomendation item at index i
   # by the user whose index is u
@@ -66,37 +61,54 @@ class Collab(object):
   def has_reccomended(self, i, u):
     return False
 
+  # retuns a list of the n users most similar to the given user_id
+  def suggest_users(self, u, n):
+    return sorted(UserProfile.objects.all(),
+                  key=lambda x: abs(self._user_user_sim(u1,u2)),
+                  reverse=True)[:n]
+
   #########################################
   # FUNCTIONS NOT FOR OUTSIDE USE (PRIVATE)
   #########################################
 
   # user-user similarity metric
   # returns a scaler between 0 and 1 representing the similarity
-  # between user u1 and user u2. Closer to 1 is more similar.
-  #
-  # this implementation uses cosine similarity of common rated items
+  # between two given UserProfiles u1 and u2. Closer to 1 is more similar.
   def _user_user_sim(self, u1, u2):
-    co_rated_items = []
-    for (r1, r2) in zip(self.rating_matrix[u1], self.rating_matrix[u2]):
-      if r1 and r2:
-        co_rated_items.append((r1, r2))
-    if len(co_rated_items) == 0:
-      return 0.0
-    u1_vector, u2_vector = zip(*co_rated_items)
-    return 1-cosine(array(u1_vector), array(u2_vector))
+    u1_features = self._get_feature_vector(u1)
+    u2_features = self._get_feature_vector(u2)
+    u1_vec = []
+    u2_vec = []
+    keys = set(u1_features.keys()) | set(u2_features.keys())
+    for key in keys:
+      u1_vec.append(u1_features[key] if key in u1_features else 0)
+      u2_vec.append(u2_features[key] if key in u2_features else 0)
+    return 1-cosine(u1_vec, u2_vec)
 
   # returns the rating of item i by user u. If user u has not rated item i,
   # returns None
   def _get_rating(self, i, u):
     return self.rating_matrix[u][i]
 
-  def __init__(self):
-    self.rating_matrix = None
-    self.item_count = None
-    self.user_count = None
-    self.n = 32
-
-if __name__ == "__main__":
-  c = Collab()
-  c.load_file("data/jester-1-25.pickle")
-  print c.suggest_items(10, 0)
+  # returns the feature vector corresponding to that UserProfile. missing items
+  # have the value None
+  def _get_feature_vector(self, u):
+    fb_data = json.loads(u.fb_data)
+    feature_vector = {}
+    feature_vector['friend_count'] = fb_data['friend_count']
+    feature_vector['gender-' + fb_data['gender']] = 1
+    for l in fb_data['languages']:
+      feature_vector['language-' + l['name']] = 1
+    feature_vector['location-' + fb_data['location']['name']] = 1
+    for s in fb_data['education']:
+      feature_vector['school-' + s['school']['name']] = 1
+    if fb_data['birth_date']:
+      birth_month = int(fb_data['birth_date'][0:2])
+      birth_day = int(fb_data['birth_date'][3:5])
+      birth_year = int(fb_data['birth_date'][6:10])
+      feature_vector['birth_date'] = date(birth_year, birth_month, birth_day).toordinal()
+    for i in fb_data['interested_in']:
+      feature_vector['interested_in-' + i] = 1
+    for l in fb_data['likes']:
+      feature_vector['like-' + l[0]] = 1
+    return feature_vector
