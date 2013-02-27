@@ -14,12 +14,14 @@ def fill_profile(user_profile, singly_id, access_token):
 
   udata = unicode("data")
   fb_profile = {}
-  fb_profile["location"] = fb_self[0][udata][unicode("location")]
-  fb_profile["education"] =  fb_self[0][udata][unicode("education")]
-  fb_profile["birth_date"] = fb_self[0][udata][unicode("birthday")]
-  fb_profile["gender"] =  fb_self[0][udata][unicode("gender")]
-  fb_profile["interested_in"] = fb_self[0][udata][unicode("interested_in")]
-  fb_profile["languages"] = fb_self[0][udata][unicode("languages")]
+
+  self_attributes = ["location", "education", "birthday", "gender",
+                     "interested_in", "languages"] 
+
+  for a in self_attributes:
+      if unicode(a) in fb_self[0][udata]:
+          fb_profile[a] = fb_self[0][udata][unicode(a)]
+
   fb_profile["friend_count"] = fb_discovery[unicode("friends")]
   fb_profile["likes"] = []
   for i in fb_page_likes:
