@@ -15,6 +15,7 @@ def authorize_callback(request):
   content = SinglyHelper.get_access_token(code)
   user_profile = UserProfile.objects.get_or_create_user(content['account'], content['access_token'])
   user_profile.fb_data = fb_utility.fill_profile(user_profile, content['account'], content['access_token'])
+  user_profile.save()
   if not request.user.is_authenticated():
     user = authenticate(username=user_profile.user.username, password='fakepassword')
     auth_login(request, user)

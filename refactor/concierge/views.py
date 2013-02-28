@@ -1,7 +1,9 @@
+from django.core.urlresolvers import reverse
 from django.shortcuts import render_to_response
 from django.template.context import RequestContext
 from django.http import HttpResponseRedirect
 import simplejson
+from learn.Collab import Collab
 
 def index(request, template='index.html'):
     services = [
@@ -27,3 +29,11 @@ def index(request, template='index.html'):
             template, locals(), context_instance=RequestContext(request)
         )
     return response
+
+def suggest_user(request):
+    template = None # put a template here
+    if request.user.is_authenticated():
+      user_profile = request.user.get_profile()
+      suggested_user = Collab().suggest_users(user_profile, 1)
+      return render_to_response(template, locals(), context_instance=RequestContext(request))
+    return HttpResponseRedirect(reverse('concierge.views.index'))
