@@ -1,7 +1,5 @@
-import cPickle, json
+import cPickle, json, math
 from datetime import date
-from scipy.spatial.distance import cosine
-from numpy import array
 
 from user_profile.models import UserProfile
 
@@ -64,7 +62,7 @@ class Collab(object):
   # retuns a list of the n users most similar to the given user_id
   def suggest_users(self, u, n):
     return sorted(UserProfile.objects.all(),
-                  key=lambda x: abs(self._user_user_sim(u1,u2)),
+                  key=lambda x: abs(self._user_user_sim(u,x)),
                   reverse=True)[:n]
 
   #########################################
@@ -83,7 +81,15 @@ class Collab(object):
     for key in keys:
       u1_vec.append(u1_features[key] if key in u1_features else 0)
       u2_vec.append(u2_features[key] if key in u2_features else 0)
-    return 1-cosine(u1_vec, u2_vec)
+    prod_sum = 0.0
+    u1_sq_sum = 0.0
+    u2_sq_sum = 0.0
+    for f1, f2 in zip(u1_vec, u2_vec):
+      prod_sum += f1 * f2
+      u1_sq_sum += f1 * f1
+      u2_sq_sum += f2 * f2
+    return prod_sum / ( math.sqrt(u1_sq_sum) * math.sqrt(u2_sq_sum) )
+
 
   # returns the rating of item i by user u. If user u has not rated item i,
   # returns None
