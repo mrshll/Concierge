@@ -103,8 +103,9 @@ class Collab(object):
     feature_vector = {}
     feature_vector['friend_count'] = fb_data['friend_count']
     feature_vector['gender-' + fb_data['gender']] = 1
-    for l in fb_data['languages']:
-      feature_vector['language-' + l['name']] = 1
+    if fb_data['languages']:
+      for l in fb_data['languages']:
+        feature_vector['language-' + l['name']] = 1
     feature_vector['location-' + fb_data['location']['name']] = 1
     for s in fb_data['education']:
       feature_vector['school-' + s['school']['name']] = 1
