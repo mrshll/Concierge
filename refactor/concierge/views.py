@@ -31,9 +31,9 @@ def index(request, template='index.html'):
     return response
 
 def suggest_user(request):
-    template = None # put a template here
+    template = 'findafriend.html' # put a template here
     if request.user.is_authenticated():
       user_profile = request.user.get_profile()
-      suggested_user = Collab().suggest_users(user_profile, 1)
+      suggested_user = Collab().suggest_users(user_profile, 1)[0].user
       return render_to_response(template, locals(), context_instance=RequestContext(request))
     return HttpResponseRedirect(reverse('concierge.views.index'))

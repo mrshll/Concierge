@@ -35,7 +35,7 @@
 		        </li>
 		    {% endfor %}
 		    </ul>
-		
+
 		    {% if request.user.is_authenticated %}
 		    <div id="access-token-wrapper">
 		        <p>Here's your access token for making API calls directly: 
@@ -46,22 +46,10 @@
 		    </div>		    		    
 		    
 	    {% endif %}
+	    
+	     <h2>Step 2. Find a friend</h2>
+		   <a href="./findafriend.html">Find a new friend</a>
 	    </div>
-	    <div id="rightPop" class="login right popOutWithBorder">
-		    <h2>Step 2. Find friends</h2>
-		    {% if request.user.is_authenticated %}
-		    <div id="friendWrapper">
-			    <div id="friendList">
-				    
-			    </div>
-		    </div>
-		    {% endif %}
-		    
-	    </div>
-    </div>
-    
-    
-    
-    
+    </div> 
   </body>
 </html>
