@@ -102,20 +102,25 @@ class Collab(object):
     fb_data = json.loads(u.fb_data)
     feature_vector = {}
     feature_vector['friend_count'] = fb_data['friend_count']
-    feature_vector['gender-' + fb_data['gender']] = 1
-    if fb_data['languages']:
+    if 'gender' in fb_data:
+      feature_vector['gender-' + fb_data['gender']] = 1
+    if 'languages' in fb_data:
       for l in fb_data['languages']:
         feature_vector['language-' + l['name']] = 1
-    feature_vector['location-' + fb_data['location']['name']] = 1
-    for s in fb_data['education']:
-      feature_vector['school-' + s['school']['name']] = 1
-    if fb_data['birth_date']:
+    if 'location' in fb_data:
+      feature_vector['location-' + fb_data['location']['name']] = 1
+    if 'education' in fb_data:
+      for s in fb_data['education']:
+        feature_vector['school-' + s['school']['name']] = 1
+    if 'birth_date' in fb_data:
       birth_month = int(fb_data['birth_date'][0:2])
       birth_day = int(fb_data['birth_date'][3:5])
       birth_year = int(fb_data['birth_date'][6:10])
       feature_vector['birth_date'] = date(birth_year, birth_month, birth_day).toordinal()
-    for i in fb_data['interested_in']:
-      feature_vector['interested_in-' + i] = 1
-    for l in fb_data['likes']:
-      feature_vector['like-' + l[0]] = 1
+    if 'interested_in' in fb_data:
+      for i in fb_data['interested_in']:
+        feature_vector['interested_in-' + i] = 1
+    if 'likes' in fb_data:
+      for l in fb_data['likes']:
+        feature_vector['like-' + l[0]] = 1
     return feature_vector
