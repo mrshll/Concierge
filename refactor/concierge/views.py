@@ -8,13 +8,6 @@ from learn.Collab import Collab
 def index(request, template='index.html'):
     services = [
         'Facebook',
-        'Foursquare',
-        'Instagram',
-        'Tumblr',
-        'Twitter',
-        'LinkedIn',
-        'FitBit',
-        'Email'
     ]
     if request.user.is_authenticated():
         print(request.user)

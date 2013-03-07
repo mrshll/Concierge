@@ -21,8 +21,7 @@
  	</div>
  	<div id="contentWrapper">
 	 	<div id="leftPop" class="login left popOutWithBorder">   
-		    <h2>Step 1. Log In</h2>
-		
+		    <h2>Log In</h2>
 		    <ul id="auth">
 		    {% for service in services %}
 		        <li>
@@ -37,18 +36,9 @@
 		    </ul>
 
 		    {% if request.user.is_authenticated %}
-		    <div id="access-token-wrapper">
-		        <p>Here's your access token for making API calls directly: 
-		        	<input type="text" id="access-token" value="{{ user_profile.access_token }}" />
-		        	
-		        </p>
-		        <p>Profiles: <input type="text" id="access-token" value="{{ user_profile.profiles }}" /></p>
-		    </div>		    		    
-		    
-	    {% endif %}
-	    
-	     <h2>Step 2. Find a friend</h2>
-		   <a href="./findafriend.html">Find a new friend</a>
+		     <h2>Step 2. Find a friend</h2>
+		     <a href="./findafriend.html">Find a new friend</a>
+		    {% endif %}
 	    </div>
     </div> 
   </body>
