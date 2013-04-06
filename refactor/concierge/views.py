@@ -13,10 +13,7 @@ def index(request, template='index.html'):
         print(request.user)
         user_profile = request.user.get_profile()
         print(user_profile.profiles)
-        if user_profile.profiles and user_profile.profiles != "":
-          # We replace single quotes with double quotes b/c of python's strict json requirements
-          profiles = simplejson.loads(user_profile.profiles.replace("'", '"'))
-        else:
+        if not(user_profile.profiles and user_profile.profiles != ""):
           profiles = ""
     response = render_to_response(
             template, locals(), context_instance=RequestContext(request)
